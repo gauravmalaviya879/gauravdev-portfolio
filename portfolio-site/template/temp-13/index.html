@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/botstrap-5.css">
+  <link rel="stylesheet" href="./css/gym.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <!-- scroll carousel cdn -->
+  <script src="./js/carousel-scroll.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/waypoint.js"></script>
+  <!-- fontawosome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/f7a0c19f26.js" crossorigin="anonymous"></script>
+  <script src="./js/iconfy.js"></script>
+</head>
+
+<body>
+  <!-- loader  -->
+  <div id="Loader" class="">
+    <div class="loader-btn"></div>
+  </div>
+  <!-- overlay -->
+  <div id="overlay-nav" class="" onclick="off()">
+    <div id="nav-menu" class="center">
+
+      <div class="row w-100">
+        <div class="col-md-6 col-12    ">
+          <div class="d-flex flex-column center">
+
+            <a href="#hero-2" class="font-35 text-decoration monst-bold my-sm-1 menu-font">about us</a>
+            <a href="#aboutUs" class="font-35 text-decoration monst-bold my-sm-1 menu-font">reviews</a>
+            <a href="#chooseUs" class="font-35 text-decoration monst-bold my-sm-1 menu-font">choose Us</a>
+            <a href="#traning" class="font-35 text-decoration monst-bold my-sm-1 menu-font">traning</a>
+            <a href="#programs" class="font-35 text-decoration monst-bold my-sm-1 menu-font">programs</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 mt-4 mt-md-0 center-lg">
+          <div class="d-flex flex-column ">
+            <div class="text-center text-md-start">
+              <h2 class="menu-font-x font-35 monst-bold ">address</h2>
+              <div class="center-md">
+                <p class="text-capitalize monst-light w-75 text-green-web font-20 ">58, 59, 60 Zimba Square
+                  Colins Street NYC</p>
+              </div>
+
+            </div>
+            <div class="my-2 text-center text-md-start">
+              <h2 class="menu-font-x font-35 monst-bold ">contact</h2>
+              <div class="center-md">
+                <p class="text-capitalize monst-light  w-50 text-green-web font-20 ">+1 852369 147
+                  hello@dropsalon.com</p> 
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="close-overlay-btn center" onclick="off() ">
+      <i class="fa-solid fa-xmark text-white"></i>
+    </div>
+  </div>
+  <div class="bg-black" id="hero-1">
+
+    <!-- navbar -->
+    <nav class="navbar px-0 bg-black nav-1  navbar-expand-xl navbar-light" id="nav-1">
+      <div class="container ">
+        <img class="img-logo-nav " src="./image/logo.png"></img>
+        <button class="navbar-toggler btn-menu " type="button" onclick="on()">
+          <i class="fa-solid fa-bars "></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <div class="d-flex flex-column flex-xl-row ">
+              <div class="center ">
+                <div class="nav-line d-flex flex-column flex-xl-row">
+                  <a class=" text-nav a-remove mx-3 my-2 my-xl-0" href="#traning">traning</a>
+                  <a class=" text-nav a-remove mx-3 my-2 my-xl-0" href="#hero-2">about us</a>
+                  <a class=" text-nav a-remove mx-3 my-2 my-xl-0" href="#chooseUs">choose Us</a>
+                  <a class=" text-nav a-remove mx-3 my-2 my-xl-0" href="#aboutUs">reviews</a>
+                  <a class=" text-nav a-remove mx-3 my-2 my-xl-0" href="#programs">programs </a>
+                </div>
+              </div>
+              <a class="a-remove ms-3" href="#subcription">
+                <div class="butoon-subscribe  px-4  center text-center">
+                  <p class="m-0 text-dark monst-bold text-uppercase text-subscribe ">subscribe</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--  -->
+    <div class="container ">
+      <div class="">
+        <div class="main-box-nav-scrren  ">
+          <div class="img-main-box   ">
+            <div class="image-box-nav   ">
+              <img src="./image/hero1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div>
+          </div>
+          <div class="text-mange-1  ">
+            <h1 class="main-heder-title monst-black font-180">empower</h1>
+            <div class="sub-title-mange ">
+              <h2 class="text-subheader-title monst-black  font-100 my-2">your body</h2>
+            </div>
+            <div class="image-effect-1 ">
+              <img src="./image/effect-1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ads-panel ">
+      <marquee behavior="" class="ads-panel-manage center-x" onmouseover="this.stop();" onmouseout="this.start();"
+        direction="left">
+        <h2 class="m-0 text-uppercase monst-black font-20">ANNIVERSARY <span class="text-red">DISCOUNTS</span> ARE
+          RUNNING NOW - SUBSCRIBE FOR A YEAR & GET <span class="text-red"> 2 MONTHS FREE </span>- SUBSCRIBE FOR 6 MONT
+          ANNIVERSARY <span class="text-red">DISCOUNTS</span> ARE
+          RUNNING NOW - SUBSCRIBE FOR A YEAR & GET <span class="text-red"> 2 MONTHS FREE </span>- SUBSCRIBE FOR 6 MONT
+        </h2>
+      </marquee>
+    </div>
+  </div>
+  <!--  -->
+  <!-- <div class="image-box-hero2 ">
+    <iconify-icon icon="icon-park-outline:brain" flip="horizontal"></iconify-icon>
+   </div> -->
+  <div class="bg-black py-5" id="hero-2">
+    <!-- <div class="container"> -->
+    <div class="row  pt-xl-5 mt-xl-5 flex-xl-row flex-column-reverse">
+      <div class="col-xl-7 col-12 center-yh ">
+        <div class="container">
+          <div class="row ms-xl-5">
+            <div class="col-lg-6 col-12 p-2 ">
+              <div class="card-hero-2 p-3 ">
+                <div class="manage-header-two ">
+                  <div class="image-box-hero2 ">
+                    <iconify-icon icon="fluent:brain-circuit-20-regular" class="hero-2-icon-color font-30">
+                    </iconify-icon>
+                  </div>
+                  <div class="center-yh  ms-3">
+                    <h2 class="font-18 m-0 monst-bold text-header-hero-2">BRAIN DEVELOPMENT</h2>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 font-18 text-muted-dark mt-2 monst-light">It has survived not only five centuries,
+                    but also the leap into electronic
+                    typesetting, remaining essentially.
+                    but also the leap into electronic
+                    typesetting, remaining essentially.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 p-2">
+              <div class="card-hero-2 p-3 ">
+                <div class="manage-header-two ">
+                  <div class="image-box-hero2 ">
+                    <iconify-icon icon="icon-park-outline:brain" flip="horizontal" class="hero-2-icon-color font-30">
+                    </iconify-icon>
+                  </div>
+                  <div class="center-yh  ms-3">
+                    <h2 class="font-18 m-0  monst-bold text-header-hero-2">SELF DECIPLINE</h2>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 font-18 text-muted-dark mt-2 monst-light">It has survived not only five centuries,
+                    but also the leap into electronic
+                    typesetting, remaining essentially.
+                    but also the leap into electronic
+                    typesetting, remaining essentially.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 p-2">
+              <div class="card-hero-2 p-3 ">
+                <div class="manage-header-two ">
+                  <div class="image-box-hero2 ">
+                    <iconify-icon icon="icon-park-solid:muscle" class="hero-2-icon-color font-30"></iconify-icon>
+                  </div>
+                  <div class="center-yh  ms-3">
+                    <h2 class="font-18 m-0 monst-bold text-header-hero-2">STRONG BODY</h2>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 font-18 text-muted-dark mt-2 monst-light">It has survived not only five centuries,
+                    but also the leap into electronic
+                    typesetting, remaining essentially.
+                    but also the leap into electronic
+                    typesetting, remaining essentially.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 p-2">
+              <div class="card-hero-2 p-3 ">
+                <div class="manage-header-two ">
+                  <div class="image-box-hero2 ">
+                    <iconify-icon icon="healthicons:body-outline" class="hero-2-icon-color font-40"></iconify-icon>
+                  </div>
+                  <div class="center-yh  ms-3">
+                    <h2 class="font-18  m-0  monst-bold text-header-hero-2">BODY LANGUAGE</h2>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 font-18 text-muted-dark mt-2 monst-light">It has survived not only five centuries,
+                    but also the leap into electronic
+                    typesetting, remaining essentially.
+                    but also the leap into electronic
+                    typesetting, remaining essentially.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-xl-5 col-12 ">
+        <div class="inner-box-hero2  ">
+          <div class="manage-round">
+            <div class="round-box">
+              <div class="round-two">
+                <div class="round-three">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imag-box-hero2">
+            <img src="./image/hero-2.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="text-subheader-hero2 ">
+          <div class="d-flex justify-content-end">
+            <div class="main-width-hero2">
+              <h1 class="text-main-grdient text-end font-60 monst-black">WHY TO GRIND
+                YOUR BODY
+                EVERYDAY</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------- traning---------------------------- -->
+
+  <div id="traning" class="bg-black">
+    <div class="container pt-xl-5">
+      <h1 class="text-main-grdient font-60 width-50 monst-black">FACILITIES WHILE
+        TRAINING</h1>
+      <div class="row manage-row">
+        <div class="col-xl-6 col-12 p-0">
+          <div class="main-box-trainng  ">
+            <div class="img-doted  ">
+              <div class="img-box-doted ">
+                <img src="./image/effect-2.png" class="img-efect-control" alt="">
+              </div>
+            </div>
+            <div class="img-traningcontrol-jq">
+              <div class="img-traner">
+                <img src="./image/traning.png" class=" " alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-12  p-0 ">
+          <div class="main-box-traning-2 py-4  mx-2  ">
+            <div class="center-yh-xl sub-traning-append">
+            </div>
+            <div class="btn-carousel-traning">
+              <div class="d-flex">
+                <div class="d-flex center-yh">
+                  <h3 class="text-green-web m-0 font-30 monst-medium"> <span class="current-page"></span> / <span
+                      class="all-page"></span> </h3>
+                </div>
+                <div class="d-flex ms-3">
+                  <div class="navigation-btn prev-btn center">
+                    <i class="fa-solid fa-arrow-left-long text-color-i-traning  font-30 "></i>
+                  </div>
+                  <div class="navigation-btn prev-next ms-3 center">
+                    <i class="fa-solid fa-arrow-right-long font-30 text-color-i-traning"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------------player btn ----------------------- -->
+  <div id="player" class="bg-black-dark ">
+    <div class="container">
+      <div class="">
+        <div class="row">
+          <div class="col-lg-3 col-12 py-xl-5 py-3 ">
+            <!-- detail-one -->
+            <div class="player-one-box center">
+              <h2 class="border-green m-0 text-player-main monst-black  font-100">take gym tour</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 my-lg-0 py-xl-5   px-xl-4 center-yh  ">
+            <!-- VEDIO  -->
+            <div class="player-two-box">
+              <iframe class="videoFullScreen" type="text/html" src="https://www.youtube.com/embed/v7d6cw-26RA">
+              </iframe>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12 py-xl-5 py-3 ">
+            <!-- player three-->
+            <div class="player-three-box center">
+              <div>
+                <p class="text-green-web monst-light font-20">It has survived not only five
+                  centuries, but also the
+                  leap into electronic typesetting,
+                  remaining essentially unchanged.
+                  It was popularised in the 1960s
+                  with the release of Letraset
+                  sheets containing Lorem
+                  Ipsum passages.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------------------------programs--------------------------->
+  <div id="programs" class="bg-black py-5 ">
+    <div class="container">
+      <div class="d-flex justify-content-end">
+        <h1 class="text-main-grdient text-end font-60 width-x-50  monst-black">PROGRAMS
+          WE OFFER</h1>
+      </div>
+      <div class="">
+        <div class="row">
+          <div class="col-xl-6 col-12 my-3">
+            <div class="main-card-program">
+              <div class="main-programimg-box center">
+                <div class="sub-box-program px-3 ">
+                  <img src="./image/program-1.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="p-4 main-programimg-two-box ">
+                <h2 class="text-green-web font-25 monst-ex-bold text-uppercase">AEROBICS</h2>
+                <p class="monst-light font-20 m-0 text-muted-dark">It has survived not only five centuries,
+                  but also the leap into electronic
+                  typesetting, remaining essentially.
+                  also the leap into electronic
+                  but also the leap into electronic
+                  typesetting, remaining essentially.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-12  my-3">
+            <div class="main-card-program">
+              <div class="main-programimg-box center">
+                <div class="sub-box-program px-3 ">
+                  <img src="./image/program-2.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="p-4 main-programimg-two-box">
+                <h2 class="text-green-web font-25 monst-ex-bold text-uppercase">BODY BUILDING</h2>
+                <p class="monst-light font-20 m-0 text-muted-dark">It has survived not only five centuries,
+                  but also the leap into electronic
+                  typesetting, remaining essentially.
+                  also the leap into electronic
+                  but also the leap into electronic
+                  typesetting, remaining essentially.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-12  my-3 ">
+            <div class="main-card-program">
+              <div class="main-programimg-box center ">
+                <div class="sub-box-program px-3 ">
+                  <img src="./image/pogram-3.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="p-4 main-programimg-two-box">
+                <h2 class="text-green-web font-25 monst-ex-bold text-uppercase">PERSONAL TRAINING</h2>
+                <p class="monst-light font-20 m-0 text-muted-dark">It has survived not only five centuries,
+                  but also the leap into electronic
+                  typesetting, remaining essentially.
+                  also the leap into electronic
+                  but also the leap into electronic
+                  typesetting, remaining essentially.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-12  my-3 ">
+            <div class="main-card-program">
+              <div class="main-programimg-box center ">
+                <div class="sub-box-program px-3 ">
+                  <img src="./image/pogram-14.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="p-4 main-programimg-two-box">
+                <h2 class="text-green-web font-25 monst-ex-bold text-uppercase">WEIGHT LOSS</h2>
+                <p class="monst-light font-20 m-0 text-muted-dark">It has survived not only five centuries,
+                  but also the leap into electronic
+                  typesetting, remaining essentially.
+                  also the leap into electronic
+                  but also the leap into electronic
+                  typesetting, remaining essentially.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------------------------------subcription-------------------------------- -->
+  <div id="subcription" class="bg-black pb-5 ">
+    <div class="container">
+      <div class="d-flex justify-content-start">
+        <h1 class="text-main-grdient  font-60  m-0  monst-black">SUBSCRIPTIONS</h1>
+      </div>
+      <div class="row pt-4 ">
+        <div class="col-xl-4 col-lg-6 col-12 center py-3">
+          <div class="card-subcription ">
+            <div class="card-img-box">
+              <img src="./image/sub-card-1.png" class="  " alt="">
+            </div>
+            <div class="card-bluer">
+            </div>
+            <div class="card-detail-subcription p-xl-5 p-4">
+              <div class="sub-plan-info ">
+                <h2 class="text-green-web monst-light m-0 font-25 text-center let-space-2 text-uppercase">Monthly</h2>
+                <h3 class="font-60 text-white py-xl-4 py-3 text-center monst-black">$90</h3>
+
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div> 
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">Complimentory Food & Drink</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">New filo pooi Added</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">Free accessories (Towel,
+                      Shaker)</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">Aerobics class every week</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">Complimentory Food & Drink</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">High Quality Training</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">main-detail-subplan</p>
+                  </div>
+                </div>
+              </div>
+              <a class="a-remove" href="#">
+                <div class="button-subcription center">
+                  <h3 class="font-20 monst-ex-bold m-0  text-uppercase">SUBSCRIBE</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-12 center py-3">
+          <div class="card-subcription ">
+            <div class="card-img-box">
+              <img src="./image/sub-card-3.png" class="  " alt="">
+            </div>
+            <div class="card-bluer">
+            </div>
+            <div class="card-detail-subcription p-xl-5 p-4">
+              <div class="sub-plan-info ">
+                <h2 class="text-green-web monst-light m-0 font-25 text-center let-space-2 text-uppercase">QUARTERLY
+                </h2>
+                <h3 class="font-60 text-white py-xl-4 py-3 text-center monst-black">$250</h3>
+
+
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">New Classes Added</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">New filo pooi Added</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">Free accessories (Towel,
+                      Shaker)</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">Aerobics class every week</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">Complimentory Food & Drink</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">High Quality Training</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">main-detail-subplan</p>
+                  </div>
+                </div>
+              </div>
+              <a class="a-remove" href="#">
+                <div class="button-subcription center">
+                  <h3 class="font-20 monst-ex-bold m-0  text-uppercase">SUBSCRIBE</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-12 center py-3">
+          <div class="card-subcription ">
+            <div class="card-img-box">
+              <img src="./image/subcard-2.png" class="  " alt="">
+            </div>
+            <div class="card-bluer">
+            </div>
+            <div class="card-detail-subcription p-xl-5 p-4">
+              <div class="sub-plan-info  ">
+                <h2 class="text-green-web monst-light m-0 font-25 text-center let-space-2 text-uppercase">YEARLY</h2>
+                <h3 class="font-60 text-white py-xl-4 py-3 text-center monst-black ">$850</h3>
+                <div class="d-flex my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">New Classes Added</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">New filo pooi Added</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">Free accessories (Towel,
+                      Shaker)</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">Aerobics class every week</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">Complimentory Food & Drink</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">High Quality Training</p>
+                  </div>
+                </div>
+                <div class="d-flex  my-2">
+                  <div class="center-yh me-3">
+                    <div class="round-bulet"></div>
+                  </div>
+                  <div class="center-yh ">
+                    <p class="m-0 monst-light font-18 text-muted-dark text-capitalize">main-detail-subplan</p>
+                  </div>
+                </div>
+              </div>
+              <a class="a-remove" href="#">
+                <div class="button-subcription center">
+                  <h3 class="font-20 monst-ex-bold m-0  text-uppercase">SUBSCRIBE</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------why to choose us ---------------- -->
+  <div id="chooseUs" class="bg-muted-black py-5">
+    <div class="container">
+      <div class="d-flex justify-content-end ">
+        <div class="width-30 ">
+          <h1 class="text-main-grdient text-end font-60  monst-black">WHY TO
+            CHOOSE US</h1>
+        </div>
+      </div>
+      <div class="row  choose">
+        <div class="col-xl-4 col-12 ">
+          <div class="detail-review center-yh  h-100">
+            <div>
+              <div class="d-flex flex-column my-3">
+                <h2 class="m-0 monst-thin font-50  text-green-web"><span class="count-h-number">1500</span>+</h2>
+                <p class="font-20 m-0 text-capitalize monst-light text-white">Five Star Google Reviews</p>
+              </div>
+              <div class="d-flex flex-column my-3">
+                <h2 class="m-0 monst-thin font-50  text-green-web"><span class="count-h-number">25</span>+</h2>
+                <p class="font-20 m-0 text-capitalize monst-light text-white">Award wins in total by our coaches</p>
+              </div>
+              <div class="d-flex flex-column my-3">
+                <h2 class="m-0 monst-thin font-50  text-green-web"><span class="count-h-number">20</span>+</h2>
+                <p class="font-20 m-0 text-capitalize monst-light text-white">Years of service in fitness industry
+                </p>
+              </div>
+              <div class="d-flex flex-column my-3">
+                <h2 class="m-0 monst-thin font-50  text-green-web"><span class="count-h-number">5000</span>+</h2>
+                <p class="font-20 m-0 text-capitalize monst-light text-white">Members have joined us so far</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 col-12">
+          <div class="round-body">
+            <div class="round-choose ">
+              <div class="round-choose-1 ">
+                <div class="img-box-choose  ">
+                  <img src="./image/review.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------carousel--------------------- -->
+  <div id="aboutUs" class="bg-black  py-5">
+    <div class="container">
+      <div class="row" class="about-header">
+        <div class="col-xl-6 col-12 ">
+          <h1 class="text-main-grdient  font-60   monst-black">WHAT THEY SAY
+            ABOUT US</h1>
+        </div>
+        <div class="col-xl-6 col-12">
+          <div class="center-yh h-100 align-items-end">
+            <div class="d-flex">
+              <div class="navigation-btn prev-btn-review center">
+                <i class="fa-solid fa-arrow-left-long text-color-i-traning  font-30 "></i>
+              </div>
+              <div class="navigation-btn  prev-next-btn-review ms-3 center">
+                <i class="fa-solid fa-arrow-right-long    font-30 text-color-i-traning"></i>
+              </div>
+            </div>
+            <div class="text-white d-none"><span class="current-page-review"></span></div>
+          </div>
+
+        </div>
+      </div>
+      <!-- circale-imnage -->
+      <div class="circale-doted">
+        <img src="./image/dotrd-round.png" class="doted-img-circale" alt="">
+      </div>
+      <!-- main-image -->
+      <!-- carousel -->
+      <div id="about-carousel" class="carousel slide mt-4 " data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="p-md-5 p-4">
+              <div class="row">
+                <div class="col-xl-7 col-12">
+                  <div class="center-yh img-box-about">
+                    <img src="./image/body-about-1.png" class="manage-about-image" alt="">
+                  </div>
+                </div>
+                <div class="col-xl-5 col-12 ">
+                  <div class="d-flex justify-content-end">
+                    <iconify-icon icon="fa-solid:quote-right" class="icon-quet"></iconify-icon>
+                  </div>
+                  <div class="review-detail">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------------------------------------------- -->
+  <footer id="footer" class="bg-black-dark py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6   pe-xl-5 col-12">
+          <div class="manage-form pe-xl-5">
+            <div class="form-group mb-3">
+              <input type="text" class="form-control monst-medium font-20" id="name" placeholder="NAME">
+            </div>
+            <div class="form-group mb-3">
+              <input type="email" class="form-control monst-medium font-20" id="name" aria-describedby="emailHelp"
+                placeholder="EMAIL">
+            </div>
+            <div class="form-group mb-3">
+              <textarea name="" class="form-control monst-medium font-20" id="" cols="30" placeholder="MESSAGE"
+                rows="5"></textarea>
+            </div>
+            <button type="submit" class="form-control  review-submit  center">
+              <h4 class="text-green-web text-submit m-0 font-20 monst-ex-bold">submit</h4>
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-6 ps-xl-5 col-12">
+          <div class="company-detail mt-4 mt-xl-0 ps-xl-5">
+            <!-- img-logo -->
+            <img src="./image/logo.png" class="footer-logo" alt="">
+            <p class="m-0 text-muted-verydark font-20 monst-ex-light">It has survived not only five centuries, but
+              also the leap into electronic typesetting,
+              remaining essentiallzunchanged. It was
+              popularised in the 1960s with the release of remaining essentiallzunchanged. It was
+              Letraset sheets containing Lorem</p>
+            <div class="social-mida mt-3">
+              <a href="#" class="a-remove font-20 "><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="a-remove font-20 ms-3"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="a-remove font-20 ms-3"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="a-remove font-20 ms-3"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="">
+              <div class="row mt-4">
+                <div class="col-lg col-12  py-2 ">
+                  <h3 class="text-muted-verydark monst-ex-light font-20 text-capitalize m-0">Phone</h3>
+                  <p class="m-0 text-green-web font-20 monst-light">+1 (852) 8528 528</p>
+                </div>
+                <div class="col-lg col-12 py-2 ">
+                  <h3 class="text-muted-verydark monst-ex-light font-20 text-capitalize m-0">E-mail</h3>
+                  <p class="m-0 text-green-web font-20 monst-light">hello@dropfitness.com</p>
+                </div>
+              </div>
+              <div class=" py-2 width-40">
+                <h3 class="text-muted-verydark monst-ex-light font-20 text-capitalize m-0">Address</h3>
+                <p class="m-0 text-green-web font-20 monst-light">58, 59, 60 Zimba Square
+                  Colins Street NYC.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="copy-right" class="bg-black">
+    <div class="container py-2">
+      <a class="m-0 a-remove copy-right" href="#">© RetryTech : All Rights Reserved</a>
+    </div>
+  </div>
+  <!-- script -->
+  <script src="./js/animation.js"></script>
+  <script src="./js/sticky.js">
+  </script>
+  <!-- other -->
+  <script src="./js/popper.js"></script>
+  <script src="./js/botstrap-5.js"></script>
+
+</body>
+
+</html>

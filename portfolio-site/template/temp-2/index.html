@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>drop Pet</title>
+  <!-- file attechment -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-5.css">
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/style.scss" />
+  <link rel="stylesheet" href="./css/swiper-421.css" />
+  <!-- other js -->
+  <script type="text/javascript" src="./js/carouselgogleapi.js">
+  </script>
+  <script type="text/javascript" src="./js/min-191.js">
+  </script>
+  <!-- fontawosome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/f7a0c19f26.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.js"></script>
+  <!-- animation -->
+  <script src="./js/waypoint.js"></script>
+</head>
+
+<body>
+  <!-- loader  -->
+  <div id="Loader" class="">
+    <div class="loader-btn"></div>
+  </div>
+  <!-- overlay -->
+  <div id="overlay-nav" class="" onclick="off()">
+    <div id="nav-menu" class="center">
+
+      <div class="row w-100">
+        <div class="col-md-6 col-12  center ">
+          <div class="d-flex flex-column center">
+            <a href="#hero-4" class="font-30 text-decoration product-Bold my-sm-1 menu-font">about us</a>
+            <a href="#hero-8" class="font-30 text-decoration product-Bold my-sm-1 menu-font">Services</a>
+            <a href="#hero-6" class="font-30 text-decoration product-Bold my-sm-1 menu-font">Pets</a>
+            <a href="#hero-7" class="font-30 text-decoration product-Bold my-sm-1 menu-font">Products</a>
+            <a href="#hero-9" class="font-30 text-decoration product-Bold my-sm-1 menu-font">Reviews</a>
+            <a href="#hero-2" class="font-30 text-decoration product-Bold my-sm-1 menu-font">Blogs</a>
+            <a href="#hero-11" class="font-30 text-decoration product-Bold my-sm-1 menu-font">Faqs</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 mt-4 mt-md-0 center">
+          <div class="d-flex flex-column ">
+            <div class="text-center text-md-start">
+              <h2 class="menu-font font-30 product-Bold ">address</h2>
+              <div class="center-md">
+                <p class="text-capitalize product-light w-50 text-pet-muted font-25 ">255, Wilson
+                  Street
+                  Jhonville, NYC</p>
+              </div>
+
+            </div>
+            <div class="my-2 text-center text-md-start">
+              <h2 class="menu-font font-30 product-Bold ">contact</h2>
+              <div class="center-md">
+                <p class="text-capitalize product-light  w-50 text-pet-muted font-25 ">+1 852369 147
+                  hello@dropsalon.com</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="close-overlay-btn center" onclick="off() ">
+      <i class="fa-solid fa-xmark text-white"></i>
+    </div>
+  </div>
+  <section class="bg-pink-white" id="nav-1">
+    <div class="container">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-xl navbar-light py-3  ">
+        <a class="hero-1-brand" href="#"><img src="./image/brand-logo.png" class="img-fluid brand-logo" alt=""></a>
+        <button onclick="on()" class="btn-menu d-xl-none" type="button" data-bs-toggle="collapse">
+          <i class="fa-solid fa-bars-staggered font-20 text-pink nav-btn-gray"></i>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <div class="center">
+            <ul class="navbar-nav  text-uppercase ">
+              <li class="nav-item let-space-05 ">
+                <a class="nav-link monst-reg font-w-600 font-16" href="#hero-8">Services</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link let-space-05 monst-reg font-w-600 font-16" href="#hero-4">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link let-space-05 monst-reg font-w-600 font-16" href="#hero-9">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link let-space-05 monst-reg font-w-600 font-16" href="#hero-7">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link let-space-05 monst-reg font-w-600 font-16" href="#hero-2">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link let-space-05 monst-reg font-w-600 font-16" href="#hero-11">Faqs</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="" class="adopt-btn text-decoration  "><span class="text-adopt poppi-Bold  fot-16">adopt here</span></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <section id="hero-1" class="hero-1 ">
+
+
+    <!-- hero-1 -->
+    <div class="container">
+      <div class="row min-90-vh center flex-column-reverse flex-xl-row" id="carousel-pet">
+        <div class="col-xl-4 col-12 pb-5  ">
+          <div class="center-left animation-scroll-1">
+            <div>
+              <h1 class="font-150 mt-5 pt-5 line-h-0  gil-black text-pink ">pure</h1>
+              <h2 class="text-pet-muted gil-black line-h-50  pt-sm-3 pt-xl-5 pt-5   mt-sm-5 font-100">cuteness</h2>
+              <p class="font-22 product-light text-pet-muted mt-4 mt-lg-0 mt-xl-5 width-80">It has survived not only
+                five
+                centuries,
+                but also the leap into electronic typesetting,
+                remaining esurvived not unchanged.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 col-12   ">
+          <div id="hero-carousel-1" class="carousel hero-section-2 slide" data-ride="carousel">
+            <ol class="carousel-indicators center">
+              <li data-bs-target="#hero-carousel-1" data-bs-slide-to="0" class="active center">
+                <div class="circale-hero-ico"></div>
+              </li>
+              <li data-bs-target="#hero-carousel-1" class="center" data-bs-slide-to="1">
+                <div class="circale-hero-ico"></div>
+              </li>
+              <li data-bs-target="#hero-carousel-1" class="center" data-bs-slide-to="2">
+                <div class="circale-hero-ico"></div>
+              </li>
+              <li data-bs-target="#hero-carousel-1" class="center" data-bs-slide-to="3">
+                <div class="circale-hero-ico"></div>
+              </li>
+            </ol>
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <div class="center-x  ">
+                  <div>
+                    <img class="d-block img-fluid " src="./image/hero-1.png" alt="First slide">
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="center-x  ">
+                  <img class="d-block img-control" src="./image/kindpng_1132650.png" alt="Second slide">
+                </div>
+
+              </div>
+              <div class="carousel-item">
+                <div class="center-x ">
+                  <img class="d-block img-control" src="./image/kindpng_1132745.png" alt="Third slide">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="center-x ">
+                  <img class="d-block img-control"
+                    src="./image/kisspng-kitten-siberian-cat-maine-coon-5aef5061468824.5862051015256331212889.png"
+                    alt="Third slide">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="hero-2">
+    <div class="row">
+      <div class="col-12 col-xl-6 padding-right-remove  ">
+        <div class="center left-hero-2 h-100 min-100 px-5">
+          <div class="d-flex flex-column">
+            <div class="pet-pow mb-4">
+              <img src="./image/ic_twotone-pets.png" class="img-pet-pow" alt="">
+            </div>
+            <div class="mt-4">
+              <h2 class="gil-extra-bold fon-35 text-muted-heding">Who we are?</h2>
+              <h4 class="text-pink font-18 gil-medium ">our mission and vision</h4>
+              <p class="font-20 pargrph-muted product-light mt-2">It has survived not only five centuries, but also the
+                leap into
+                electronic typesetting, remaining essentially unchanged. It has
+                survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.</p>
+            </div>
+            <div class="mt-2">
+              <h2 class="gil-extra-bold fon-35 text-muted-heding">Who we are?</h2>
+              <h4 class="text-pink font-18 gil-medium ">our mission and vision</h4>
+              <p class="font-20 pargrph-muted product-light mt-2">It has survived not only five centuries, but also the
+                leap into
+                electronic typesetting, remaining essentially unchanged. It has
+                survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.</p>
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="col-12 col-xl-6  padding-left-remove hero-sub-2-2 " >
+        <div class="bg-pink-filter">
+          <img src="./image/Rectangle 112.png" class="" alt="">
+        </div>
+        <div class="continbox-hero-2 Right-hero-2">
+          <div class="center h-100">
+            <div class="width-c-80">
+              <div>
+                <h1 class="font-65 text-white gil-black">Caring animals</h1>
+                <p class="text-white font-20 let-space-05 product-light">It has survived not only five centuries,
+                  but also the leap into electronic typesetting, remaining essentially unchanged.
+                  It has survived not only five centuries,
+                  but also the leap into electronic typesetting,
+                  remaining essentially unchanged.
+                  remaining essentially unchanged. It has
+                </p>
+                <p class="product-light font-20 let-space-05 text-white">
+                  survived not only five centuries,
+                  but also the leap into electronic typesetting,
+                  remaining essentially unchanged.
+                  It has survived not only five centuries,
+                  but also the leap into electronic typesetting,
+                  remaining essentially unchanged.
+                  It has survived not only five centuries,
+                  but also the leap into electronic typesetting,
+                  remaining essentially unchanged.
+                  remaining essentially unchanged.
+                </p>
+                <h2 class="font-25 text-white let-space-05 gil-medium">Maria Thomas (Manager)</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pow-white">
+          <img src="./image/white.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero-3 -->
+  <section class="hero-3" id="hero-3">
+    <div class="container">
+      <div class="row  py-5">
+        <div class="col-xl-3 col-md-6 col-12">
+          <h1><span class="count-h-number  font-65 gil-black text-pink ">50</span> <span
+              class="text-pink font-sans">+</span></h1>
+          <h2 class="text-pet-muted font-25  gil-SemiBold">Trained Caretackers</h2>
+          <p class="font-20 pargrph-muted product-light">It has survived not only five
+            centuries, but also the leap into
+            electronic typesetting, remaining.</p>
+        </div>
+        <div class="col-xl-3 col-md-6 mt-xl-0 mt-4 col-12">
+          <h1> <span class="count-h-number font-65 gil-black text-pink ">1500</span> <span
+              class="text-pink font-sans">+</span></h1>
+          <h2 class="text-pet-muted font-25  gil-SemiBold">Pets delivered</h2>
+          <p class="font-20 pargrph-muted product-light">It has survived not only five
+            centuries, but also the leap into
+            electronic typesetting, remaining.</p>
+        </div>
+        <div class="col-xl-3 col-md-6  mt-xl-0 mt-4  col-12">
+          <h1><span class="count-h-number font-65 gil-black text-pink ">900</span> <span
+              class="text-pink font-sans">+</span></h1>
+          <h2 class="text-pet-muted font-25  gil-SemiBold">Trained Caretackers</h2>
+          <p class="font-20 pargrph-muted product-light">It has survived not only five
+            centuries, but also the leap into
+            electronic typesetting, remaining.</p>
+        </div>
+        <div class="col-xl-3 col-md-6  mt-xl-0 mt-4  col-12">
+          <h1><span class="count-h-number font-65 gil-black text-pink ">50</span> <span
+              class="text-pink font-sans">+</span></h1>
+          <h2 class="text-pet-muted font-25  gil-SemiBold">Services Offered</h2>
+          <p class="font-20 pargrph-muted product-light">It has survived not only five
+            centuries, but also the leap into
+            electronic typesetting, remaining.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero-4 -->
+  <section id="hero-4">
+    <div class="container py-5">
+      <div class="text-trape">
+        <h1 class="text-pink gil-black heding font-45">What we offer</h1>
+        <p class="font-20 pargrph-muted product-light width-80">It has survived not only five centuries, but also the
+          leap into electronic typesetting, remaining
+          essentially unchanged. It hassurvived not only five centuries, but also the leap into electronic typesetting,
+        </p>
+      </div>
+
+      <div>
+        <div class="row pt-4">
+          <div class="col-xl-5  center col-lg-12">
+            <div class="hero-4-imgPetBox">
+              <svg class="image-frame-border" viewBox="0 0 503 594" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M251.648 578.036C172.66 576.08 84.0481 579.313 34.5782 517.648C-15.0095 455.836 -1.22313 367.695 22.1382 291.949C43.0254 224.225 91.6603 174.335 151.935 137.135C224.317 92.4629 309.059 28.9883 384.463 68.3335C459.184 107.322 440.954 214.631 458.539 297.116C475.566 376.988 531.032 463.004 482.617 528.742C433.474 595.47 334.444 580.086 251.648 578.036Z"
+                  fill="#FFF9F8" stroke="#EF927E" stroke-width="2" stroke-dasharray="4 4" />
+                <rect width="429" height="594" transform="matrix(-1 0 0 1 433 0)" fill="url(#pattern0)" />
+                <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_2120_190"
+                      transform="translate(-0.000859476) scale(0.00096691 0.000698324)" />
+                  </pattern>
+                  <image href="./image/kindpng_1132650.png" x="0" y="0" class="set-image-petFrame"
+                    id="image0_2120_190" />
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-12">
+
+            <div class="row align-content-center">
+              <div class="col-lg-6 delay-1 mt-4">
+                <div class="hero-4-petHealth  p-4">
+                  <div class="center-left">
+                    <div>
+
+                      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2155_91)">
+                          <path
+                            d="M29.4236 22.4416L40.8351 12.0275C40.9656 11.9084 41.0678 11.7617 41.1343 11.5981C41.2009 11.4345 41.2301 11.2581 41.2199 11.0818C41.2097 10.9055 41.1602 10.7336 41.0752 10.5788C40.9901 10.424 40.8716 10.2902 40.7283 10.187L38.0683 8.287C37.3197 7.75808 36.4197 7.48607 35.5034 7.51176C34.5871 7.53745 33.7038 7.85945 32.986 8.4295L19.7101 19.0217L15.8389 16.0293C16.356 14.503 16.2851 12.8388 15.64 11.3621C14.9949 9.88535 13.8222 8.70241 12.3511 8.04464C10.8799 7.38687 9.21636 7.3016 7.68571 7.8055C6.15506 8.30941 4.86747 9.36624 4.0748 10.7693C3.28213 12.1723 3.04141 13.8206 3.39973 15.3917C3.75805 16.9628 4.68963 18.3437 6.01224 19.2643C7.33485 20.1849 8.95334 20.579 10.5511 20.3694C12.1489 20.1598 13.611 19.3617 14.6514 18.1311L17.7626 20.5061L12.7277 24.6028C11.301 23.8351 9.63925 23.6271 8.06737 24.0197C6.49549 24.4123 5.12658 25.3771 4.22836 26.7254C3.33014 28.0738 2.96721 29.7088 3.21056 31.3105C3.45391 32.9123 4.28603 34.3657 5.54418 35.3865C6.80234 36.4072 8.39603 36.922 10.0136 36.83C11.6311 36.738 13.1562 36.0459 14.2905 34.889C15.4248 33.7322 16.0867 32.1938 16.1469 30.5748C16.2071 28.9558 15.6611 27.3725 14.6158 26.1347L34.4584 10.2819C34.7742 10.0324 35.1624 9.89171 35.5648 9.88101C35.9672 9.87031 36.3622 9.99013 36.6909 10.2226L38.1515 11.2675L25.9086 22.4535L38.1515 33.6157L36.6909 34.6607C36.3622 34.8931 35.9672 35.013 35.5648 35.0023C35.1624 34.9915 34.7742 34.8509 34.4584 34.6013L22.8093 25.2797L21.04 26.8946L32.986 36.3944C33.7048 36.9672 34.5904 37.2909 35.5093 37.3166C36.4281 37.3423 37.3304 37.0686 38.0802 36.5369L40.7401 34.6369C40.8835 34.5337 41.002 34.3999 41.087 34.2451C41.1721 34.0902 41.2215 33.9184 41.2318 33.7421C41.242 33.5658 41.2128 33.3894 41.1462 33.2258C41.0797 33.0622 40.9774 32.9155 40.847 32.7964L29.4236 22.4416ZM9.69969 18.1192C8.88658 18.1216 8.09105 17.8826 7.41383 17.4326C6.7366 16.9826 6.20814 16.3417 5.89534 15.5912C5.58255 14.8406 5.49949 14.0141 5.65668 13.2163C5.81387 12.4186 6.20424 11.6854 6.77837 11.1096C7.35249 10.5338 8.08456 10.1413 8.88188 9.98179C9.6792 9.8223 10.5059 9.90296 11.2574 10.2136C12.0088 10.5242 12.6512 11.0508 13.1032 11.7267C13.5552 12.4026 13.7965 13.1975 13.7965 14.0106C13.7965 15.0982 13.3652 16.1415 12.5973 16.9117C11.8293 17.6818 10.7873 18.1161 9.69969 18.1192ZM9.69969 34.4113C8.88658 34.4137 8.09105 34.1747 7.41383 33.7247C6.7366 33.2746 6.20814 32.6338 5.89534 31.8832C5.58255 31.1327 5.49949 30.3062 5.65668 29.5084C5.81387 28.7106 6.20424 27.9774 6.77837 27.4017C7.35249 26.8259 8.08456 26.4334 8.88188 26.2739C9.6792 26.1144 10.5059 26.195 11.2574 26.5057C12.0088 26.8163 12.6512 27.3429 13.1032 28.0188C13.5552 28.6947 13.7965 29.4896 13.7965 30.3027C13.7965 31.3903 13.3652 32.4336 12.5973 33.2037C11.8293 33.9739 10.7873 34.4082 9.69969 34.4113Z"
+                            fill="#EF927E" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_2155_91">
+                            <rect width="42.7489" height="42.7489" fill="white"
+                              transform="translate(0.853516 0.853516)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div>
+                      <h2 class="ms-4 gil-bold font-22 text-pink let-01"> PET GROOMING</h2>
+                    </div>
+                  </div>
+                  <p class="text-pet-muted font-20 product-light">It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially.into electronic typesetting, remaining
+                    essentially. </p>
+                </div>
+              </div>
+              <div class="col-lg-6 delay-2  mt-4">
+                <div class="hero-4-petHealth  p-4">
+                  <div class="center-left">
+                    <div>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M20.2986 0.167607C20.1383 0.260985 19.501 1.34837 18.8821 2.58411L17.7568 4.83093L15.3521 5.17704C12.5992 5.57336 12.1406 5.81362 12.1406 6.85998C12.1406 7.37758 12.3309 7.62899 13.9465 9.24497L15.7523 11.0513L15.3431 13.3918C14.8964 15.9469 14.9333 16.3429 15.6626 16.8207C16.2456 17.203 16.6597 17.0825 18.9965 15.851L21.0125 14.7886L23.016 15.8481C25.3491 17.0817 25.757 17.2011 26.3374 16.8207C27.0677 16.3422 27.1038 15.9478 26.6533 13.3708L26.2405 11.0093L28.0503 9.23217C29.7017 7.61077 29.8602 7.40236 29.8599 6.85423C29.8595 6.39555 29.7488 6.16038 29.3921 5.86006C29.0003 5.53036 28.5477 5.41713 26.5891 5.15899L24.2532 4.85112L23.1213 2.59084C22.4987 1.34755 21.8454 0.253436 21.6695 0.159237C21.2669 -0.056238 20.6768 -0.0526276 20.2986 0.167607ZM22.0246 4.00218C22.5394 5.03672 23.1284 5.99266 23.3338 6.12657C23.539 6.26049 24.4822 6.48745 25.4297 6.63072C28.2714 7.06085 28.1781 6.83651 26.2753 8.66157C24.358 10.5006 24.4302 10.2593 24.9434 13.1096C25.127 14.13 25.2445 14.998 25.2041 15.0382C25.1639 15.0786 24.2735 14.6627 23.2258 14.1141C22.178 13.5656 21.1764 13.1168 21 13.1168C20.8236 13.1168 19.822 13.5656 18.7742 14.1141C17.7265 14.6627 16.8361 15.0786 16.7959 15.0382C16.7555 14.998 16.873 14.13 17.0566 13.1096C17.5693 10.262 17.6423 10.505 15.7201 8.66501C13.8109 6.83766 13.7169 7.06265 16.5703 6.63072C17.5178 6.48745 18.461 6.26049 18.6662 6.12657C18.8716 5.99266 19.4606 5.03672 19.9754 4.00218C20.4903 2.9678 20.9513 2.12149 21 2.12149C21.0487 2.12149 21.5097 2.9678 22.0246 4.00218ZM6.65388 3.14274C6.51345 3.34328 6.39844 3.57271 6.39844 3.65246C6.39844 3.93112 8.75323 6.22422 9.03952 6.22422C9.4413 6.22422 9.84375 5.78014 9.84375 5.33688C9.84375 4.86523 7.72308 2.77793 7.24402 2.77793C7.05994 2.77793 6.79432 2.94204 6.65388 3.14274ZM33.2888 3.87155C32.1105 5.00948 31.918 5.47014 32.414 5.9664C32.8676 6.42 33.2233 6.25097 34.4265 5.00981C35.6127 3.78605 35.6926 3.58387 35.2278 2.98306C34.9073 2.56852 34.395 2.8032 33.2888 3.87155ZM4.68743 7.95901C4.54568 8.10097 4.42969 8.35419 4.42969 8.52174C4.42969 9.1644 4.86134 9.34229 6.42091 9.34229C8.14997 9.34229 8.53125 9.1941 8.53125 8.52174C8.53125 7.84939 8.14997 7.7012 6.42091 7.7012C5.29823 7.7012 4.88365 7.7629 4.68743 7.95901ZM33.7559 7.87844C33.358 8.11016 33.3777 8.95384 33.786 9.17244C33.9606 9.26582 34.7612 9.34229 35.5653 9.34229C36.7733 9.34229 37.0745 9.2901 37.2988 9.04213C37.6517 8.65205 37.6425 8.30988 37.2702 7.9728C37.0373 7.76192 36.6434 7.70235 35.5066 7.70612C34.7017 7.70891 33.9139 7.78637 33.7559 7.87844ZM7.5746 12.0325C6.9277 12.7 6.39844 13.3195 6.39844 13.4094C6.39844 13.4992 6.53363 13.7398 6.69884 13.9439C7.14377 14.4935 7.64974 14.282 8.82902 13.0535C9.86918 11.97 10.038 11.5294 9.58601 11.0771C9.13238 10.6235 8.77685 10.7924 7.5746 12.0325ZM32.414 11.0771C31.918 11.5734 32.1105 12.034 33.2888 13.1719C33.9322 13.7933 34.5658 14.2656 34.756 14.2656C35.0693 14.2656 35.6016 13.715 35.6016 13.391C35.6016 13.1124 33.2468 10.8193 32.9605 10.8193C32.8018 10.8193 32.5559 10.9353 32.414 11.0771ZM12.2481 18.9967C12.0143 19.255 11.9766 19.757 11.9766 22.6071V25.9173H8.96684C6.25948 25.9173 5.92987 25.9475 5.68559 26.2175C5.4518 26.4758 5.41406 26.9778 5.41406 29.8279V33.1381H2.97855C0.827367 33.1381 0.511383 33.1732 0.271523 33.4383C0.0351094 33.6995 0 34.2368 0 37.5976C0 41.1279 0.0255938 41.4799 0.30007 41.7284C0.575859 41.978 2.24979 42 21.0285 42C40.6109 42 41.4683 41.9875 41.7285 41.6998C41.9649 41.4386 42 40.9013 42 37.5405C42 34.0102 41.9744 33.6582 41.6999 33.4097C41.4496 33.1829 41.0025 33.1381 38.9929 33.1381H36.5859V29.7993C36.5859 26.7731 36.5579 26.4351 36.2859 26.1889C36.0299 25.9572 35.5484 25.9173 33.0046 25.9173H30.0234V22.5785C30.0234 19.5523 29.9954 19.2143 29.7234 18.9681C29.4523 18.7228 28.6058 18.6965 20.9715 18.6965C12.9918 18.6965 12.5045 18.7132 12.2481 18.9967ZM28.3828 23.1275V25.9173H21H13.6172V23.1275V20.3376H21H28.3828V23.1275ZM34.9453 30.3483V33.1381H33.5227C32.4291 33.1381 32.0306 33.201 31.8001 33.4097C31.4278 33.7468 31.4186 34.089 31.7715 34.479C32.0209 34.7547 32.3812 34.7792 36.2012 34.7792H40.3594V37.5691V40.3589H21H1.64062V37.5691V34.7792H13.8305C23.0928 34.7792 26.0676 34.7319 26.2172 34.5823C26.471 34.3284 26.471 33.5889 26.2172 33.335C26.0685 33.1864 23.6942 33.1381 16.5375 33.1381H7.05469V32.1535V31.1688H10.7133C14.626 31.1688 14.7656 31.1406 14.7656 30.3483C14.7656 29.5559 14.626 29.5277 10.7133 29.5277H7.05469V28.5431V27.5584H21H34.9453V30.3483ZM17.17 29.8279C16.8171 30.2179 16.8263 30.5601 17.1985 30.8972C17.5885 31.2502 17.9306 31.241 18.2675 30.8686C18.6204 30.4786 18.6112 30.1364 18.239 29.7993C17.849 29.4463 17.5069 29.4555 17.17 29.8279ZM28.4498 33.5484C28.2009 33.9285 28.2009 33.9888 28.4498 34.3689C28.7562 34.8366 29.2243 34.8987 29.6016 34.5214C29.9309 34.192 29.9309 33.7253 29.6016 33.3959C29.2243 33.0186 28.7562 33.0807 28.4498 33.5484Z"
+                          fill="#EF927E" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h2 class="ms-4 gil-bold font-22 text-pink let-01"> PET TRAINING</h2>
+                    </div>
+                  </div>
+                  <p class="text-pet-muted font-20 product-light">It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially.into electronic typesetting, remaining
+                    essentially. </p>
+                </div>
+              </div>
+              <div class="col-lg-6  delay-3 mt-4">
+                <div class="hero-4-petHealth  p-4">
+                  <div class="center-left">
+                    <div>
+
+                      <svg width="46" height="34" viewBox="0 0 46 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.230062 0.205735C-0.196733 0.636233 0.0583845 2.86979 0.795925 5.15927L1.18858 6.3784L0.790363 8.54521C-0.263678 14.2802 -0.263486 19.7211 0.79113 25.4587L1.19011 27.6293L0.78691 28.8334C0.232747 30.489 -0.14149 33.1761 0.123027 33.6021C0.234857 33.7823 0.598353 33.957 0.930773 33.9905C1.80546 34.0781 4.39271 33.5472 5.71414 33.0089L6.85201 32.5453L8.90734 32.8895C13.5539 33.6677 16.9961 33.9189 23.0181 33.9189C29.04 33.9189 32.4822 33.6677 37.1288 32.8895L39.1841 32.5453L40.322 33.0089C41.6434 33.5472 44.2306 34.0781 45.1053 33.9905C45.4378 33.957 45.8013 33.7823 45.9131 33.6021C46.1782 33.1749 45.803 30.4875 45.2458 28.8231C44.8535 27.6514 44.8496 27.5539 45.1399 26.029C45.8147 22.4825 45.9244 21.2264 45.9279 17C45.9315 12.7531 45.8312 11.6042 45.1399 7.97095C44.8496 6.44612 44.8535 6.3486 45.2458 5.17688C45.803 3.51254 46.1782 0.825072 45.9131 0.397863C45.8013 0.217731 45.4378 0.0430165 45.1053 0.00954407C44.2306 -0.0781034 41.6434 0.452812 40.322 0.991079L39.1841 1.45466L37.1288 1.11046C32.4586 0.328209 29.0394 0.0780368 23.0181 0.0780368C16.9967 0.0780368 13.5775 0.328209 8.90734 1.11046L6.85201 1.45466L5.72009 0.993595C3.69027 0.166458 0.695029 -0.263266 0.230062 0.205735ZM4.93901 2.32649C6.34177 2.85141 7.4992 3.64817 8.27645 4.6239C8.90273 5.40983 9.33797 5.56868 9.74424 5.15888C10.125 4.77482 10.0095 4.34123 9.30594 3.51196L8.63745 2.72429L9.25798 2.61091C12.4911 2.02021 18.7635 1.52528 23.0181 1.52528C27.2726 1.52528 33.545 2.02021 36.7781 2.61091L37.3987 2.72429L36.7302 3.51196C36.0266 4.34123 35.9111 4.77482 36.2919 5.15888C36.6981 5.56868 37.1334 5.40983 37.7597 4.6239C38.6154 3.54988 39.8092 2.77402 41.4583 2.22027C42.8975 1.73695 44.425 1.50033 44.3822 1.76714C44.3691 1.8484 44.3001 2.35803 44.2289 2.89959C44.1578 3.44115 43.9007 4.4192 43.6577 5.07298L43.2159 6.26173L43.6425 8.39178C44.7651 13.9956 44.7651 20.0044 43.6425 25.6082L43.2159 27.7383L43.6577 28.927C44.0482 29.978 44.3889 31.6453 44.3235 32.1858C44.2663 32.6581 41.5254 31.9767 39.8273 31.0677C39.2054 30.7349 38.3466 30.0498 37.9091 29.5373C37.1044 28.5948 36.706 28.4234 36.2919 28.8411C35.9111 29.2252 36.0266 29.6588 36.7302 30.488L37.3987 31.2757L36.7781 31.3891C33.545 31.9798 27.2726 32.4747 23.0181 32.4747C18.7635 32.4747 12.4911 31.9798 9.25798 31.3891L8.63745 31.2757L9.30594 30.488C10.0095 29.6588 10.125 29.2252 9.74424 28.8411C9.33011 28.4234 8.9317 28.5948 8.12702 29.5373C7.25291 30.561 5.65218 31.51 4.02806 31.9674C2.78335 32.3178 1.74754 32.4354 1.70668 32.2309C1.62036 31.7977 1.99345 29.9631 2.37842 28.927L2.82018 27.7383L2.39358 25.6082C1.2701 20.0001 1.27087 13.977 2.39588 8.39178L2.82498 6.26173L2.44997 5.29432C2.06941 4.31259 1.52023 1.79364 1.65661 1.65608C1.807 1.50439 3.86655 1.92521 4.93901 2.32649Z"
+                          fill="#EF927E" />
+                        <path
+                          d="M17.2639 17C18.3233 17 19.1821 16.1338 19.1821 15.0652C19.1821 13.9966 18.3233 13.1304 17.2639 13.1304C16.2045 13.1304 15.3457 13.9966 15.3457 15.0652C15.3457 16.1338 16.2045 17 17.2639 17Z"
+                          fill="#EF927E" />
+                        <path
+                          d="M20.717 13.9043C21.7764 13.9043 22.6352 13.0381 22.6352 11.9695C22.6352 10.9009 21.7764 10.0347 20.717 10.0347C19.6576 10.0347 18.7988 10.9009 18.7988 11.9695C18.7988 13.0381 19.6576 13.9043 20.717 13.9043Z"
+                          fill="#EF927E" />
+                        <path
+                          d="M25.3205 13.9043C26.3799 13.9043 27.2387 13.0381 27.2387 11.9695C27.2387 10.9009 26.3799 10.0347 25.3205 10.0347C24.2611 10.0347 23.4023 10.9009 23.4023 11.9695C23.4023 13.0381 24.2611 13.9043 25.3205 13.9043Z"
+                          fill="#EF927E" />
+                        <path
+                          d="M28.7727 17C29.8321 17 30.6909 16.1338 30.6909 15.0652C30.6909 13.9966 29.8321 13.1304 28.7727 13.1304C27.7133 13.1304 26.8545 13.9966 26.8545 15.0652C26.8545 16.1338 27.7133 17 28.7727 17Z"
+                          fill="#EF927E" />
+                        <path
+                          d="M27.1154 19.2134C26.4479 18.424 25.8878 17.7507 25.2126 16.9613C24.8596 16.5434 24.4069 16.1255 23.8698 15.9397C23.7854 15.9088 23.701 15.8855 23.6166 15.8701C23.4248 15.8391 23.2177 15.8391 23.0182 15.8391C22.8187 15.8391 22.6115 15.8391 22.412 15.8778C22.3276 15.8933 22.2432 15.9165 22.1588 15.9475C21.6217 16.1332 21.1767 16.5511 20.8161 16.969C20.1486 17.7585 19.5885 18.4318 18.9133 19.2212C17.9081 20.235 16.6728 21.3572 16.903 22.9283C17.1255 23.7177 17.6856 24.4994 18.6907 24.7238C19.2509 24.8399 21.0386 24.3833 22.9414 24.3833H23.0795C24.9824 24.3833 26.7701 24.8322 27.3302 24.7238C28.3354 24.4994 28.8955 23.71 29.118 22.9283C29.3558 21.3495 28.1205 20.2273 27.1154 19.2134Z"
+                          fill="#EF927E" />
+                      </svg>
+
+                    </div>
+                    <div>
+                      <h2 class="ms-4 gil-bold font-22 text-pink let-01">PET HOTEL</h2>
+                    </div>
+                  </div>
+                  <p class="text-pet-muted font-20 product-light">It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially.into electronic typesetting, remaining
+                    essentially. </p>
+                </div>
+              </div>
+              <div class="col-lg-6 delay-4 mt-4">
+                <div class="hero-4-petHealth p-4">
+                  <div class="center-left">
+                    <div>
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.2055 0.202241C13.0086 0.399852 13.0052 0.421198 13.0593 1.12437C13.3036 4.29752 14.454 7.04939 16.0136 8.1915C16.2833 8.38904 16.5656 8.59559 16.641 8.65053C16.7657 8.74133 16.7728 8.85285 16.7193 9.87645L16.6604 11.0025L15.7999 11.2684C15.3267 11.4146 14.8676 11.5544 14.7798 11.579C14.6332 11.6201 14.6124 11.5704 14.5253 10.9719C14.3034 9.44654 13.6969 7.56948 13.0908 6.53245C12.946 6.28477 12.546 5.79859 12.2018 5.45211C11.2598 4.50369 10.4775 4.18734 9.23658 4.25302C8.436 4.2954 7.86906 4.54355 7.2645 5.11653C6.39837 5.93727 5.97066 6.77527 5.11689 9.32474C4.41244 11.4282 4.18858 12.0073 4.07985 12.0073C4.03832 12.0073 3.81891 11.8153 3.59231 11.5806C3.05063 11.0195 2.67205 10.8299 2.09502 10.8308C0.894892 10.8328 0.0491783 12.0478 0.470784 13.1643C0.759259 13.9283 2.28783 15.254 3.26605 15.5885C3.52214 15.6761 3.91051 15.7294 4.30161 15.7305C4.84594 15.7321 4.99706 15.6994 5.46294 15.4792C6.69498 14.8969 7.33912 13.8291 8.40808 10.5969C8.75741 9.54056 9.15109 8.4734 9.28289 8.22533C9.4908 7.83395 9.54187 7.78467 9.66929 7.8531C9.84717 7.94861 10.226 8.59347 10.4499 9.18207C10.7915 10.08 11.1524 11.8563 11.2402 13.0717C11.2627 13.3838 11.25 13.4012 10.6374 13.9024C9.87454 14.5263 9.19035 15.314 9.19035 15.5684C9.19035 15.8758 9.47593 16.1667 9.77779 16.1667C9.99985 16.1667 10.0998 16.0985 10.4174 15.7305C11.2264 14.7931 12.7038 13.7649 14.1747 13.1155C14.8888 12.8004 16.4764 12.2428 16.6599 12.2428C16.7248 12.2428 16.7695 12.485 16.8008 13.0079C16.9647 15.7402 18.7978 17.9833 21.4413 18.6862C21.9612 18.8245 22.406 18.8596 24.2868 18.9107C27.4636 18.9971 30.7954 18.8976 31.5613 18.6934C32.7381 18.3798 33.6572 17.843 34.498 16.9783C34.7642 16.7045 35.0028 16.4806 35.0282 16.4806C35.0535 16.4806 35.1631 16.7623 35.2715 17.1067C36.187 20.0146 36.0578 23.7215 34.954 26.2154L34.7615 26.6504L30.5997 29.1894L26.4379 31.7284L22.6833 30.804C20.6183 30.2955 18.5767 29.7574 18.1465 29.608C17.1053 29.2466 16.1835 28.8156 16.2747 28.7328C16.3147 28.6965 17.4401 27.8892 18.7754 26.9389C20.1107 25.9885 21.3092 25.09 21.4386 24.9421C22.439 23.7989 22.6423 22.2713 21.9763 20.9007C21.3422 19.5958 20.214 18.8954 18.7332 18.8872C18.1136 18.8837 17.9116 18.9156 17.5177 19.0787C17.2579 19.1863 15.3747 20.2124 13.333 21.3591C11.2911 22.5056 9.54438 23.4836 9.45122 23.5322C9.28735 23.6178 9.2753 23.5933 9.08069 22.7766C8.6673 21.0418 8.65666 19.5564 9.04807 18.2211C9.2437 17.5537 9.19575 17.2873 8.85025 17.1212C8.55427 16.9788 8.22269 17.1184 8.0704 17.4492C7.75455 18.1353 7.51254 19.8415 7.58997 20.8362C7.66006 21.7367 7.83519 22.7317 8.06101 23.5138C8.16888 23.887 8.24592 24.2036 8.23232 24.2173C8.2187 24.2309 7.11752 24.8589 5.78528 25.6129C0.279067 28.729 0.0811702 28.8468 0.00686125 29.0563C-0.0489878 29.214 0.223296 30.3448 1.29749 34.4167C2.55527 39.1841 2.6751 39.5894 2.87081 39.7353L3.0827 39.8932L5.72583 39.3148C7.57581 38.9099 8.49818 38.7421 8.79925 38.7556C9.03587 38.7663 13.2245 39.0587 18.1074 39.4056C23.9683 39.8219 27.2283 40.0232 27.7004 39.9979C28.5219 39.9538 29.4989 39.6543 30.1878 39.2354C30.8139 38.8547 33.0725 36.9172 33.1749 36.6729C33.3538 36.2463 32.938 35.7647 32.5088 35.9014C32.4214 35.9293 31.7947 36.4268 31.1163 37.007C30.4185 37.6038 29.6577 38.1806 29.3646 38.3351C28.755 38.6565 28.027 38.8445 27.3856 38.846C27.1324 38.8467 24.4573 38.6711 21.4408 38.4558C18.4244 38.2406 14.4252 37.958 12.5538 37.8279C10.6824 37.6979 9.01045 37.577 8.83836 37.5594C8.64172 37.5394 7.61813 37.7202 6.08377 38.0462C4.74089 38.3314 3.62774 38.5489 3.61014 38.5294C3.59262 38.51 3.05157 36.4987 2.40782 34.06C1.55702 30.8368 1.26065 29.6013 1.32244 29.5356C1.41834 29.4338 5.52285 27.1004 12.8743 22.9686C16.4662 20.9497 17.9626 20.1481 18.2585 20.0845C19.0803 19.9077 19.963 20.2132 20.5621 20.8817C21.385 21.8 21.3843 23.2244 20.5606 24.1479C20.4374 24.2859 19.1047 25.2711 17.599 26.3372C16.0933 27.4031 14.7821 28.347 14.6853 28.4346C14.4883 28.6128 14.4488 29.0065 14.6071 29.2139C14.839 29.5178 16.936 30.4858 18.1904 30.8679C18.8906 31.0813 26.4356 32.9613 26.5916 32.9613C26.642 32.9613 27.9128 32.2097 29.4156 31.2912C34.7404 28.0362 35.7395 27.438 36.0149 27.3391C37.0744 26.9591 38.4019 27.6587 38.7228 28.7661C38.9358 29.5014 38.7819 30.2611 38.3095 30.8061C38.2333 30.894 37.2162 31.7841 36.0494 32.7839C34.8722 33.7928 33.9084 34.6771 33.884 34.7709C33.7894 35.1336 34.0745 35.4987 34.452 35.4987C34.7008 35.4987 34.6613 35.5299 37.3915 33.1831C39.5743 31.3069 39.8837 30.8868 39.9863 29.6596C40.1427 27.7878 38.5697 26.0607 36.7042 26.056C36.4998 26.0555 36.3327 26.0352 36.3327 26.011C36.3327 25.9867 36.4193 25.6601 36.525 25.2851C36.9364 23.827 36.9959 23.3199 36.9965 21.2679C36.9971 19.5713 36.976 19.2403 36.8173 18.4534C36.6138 17.4442 36.3482 16.5502 36.0027 15.7104L35.7664 15.1365L35.9252 14.651C36.2133 13.7705 36.2685 13.1991 36.2861 10.9155L36.3034 8.68569L36.6955 8.43322C38.408 7.33074 39.597 4.75451 39.9417 1.39968C40.0265 0.574232 40.0228 0.46444 39.904 0.282604C39.8316 0.171712 39.6837 0.058624 39.5753 0.0313132C39.4458 -0.00125566 37.8552 0.365556 34.9417 1.09989L30.5053 2.21806L26.6334 2.23234L22.7615 2.24662L18.2453 1.12335C15.7615 0.505485 13.6567 0 13.5682 0C13.4795 0 13.3164 0.0910359 13.2055 0.202241ZM20.1763 2.94297C20.1034 2.98613 19.84 3.1511 19.5909 3.30963L19.1378 3.5978L18.4396 3.37257C17.551 3.08588 16.4294 2.85798 15.3175 2.73822L14.444 2.64412L14.4011 2.40115C14.3776 2.2675 14.3354 1.97626 14.3074 1.75393L14.2566 1.34961L17.2826 2.10709C19.5707 2.67975 20.2764 2.88364 20.1763 2.94297ZM38.6811 2.029L38.5845 2.65142L37.9866 2.70573C36.9596 2.79904 35.7035 3.0406 34.7724 3.32383L33.877 3.59623L33.56 3.37877C33.3857 3.25908 33.1198 3.09718 32.9692 3.01886L32.6954 2.87642L35.7069 2.11729C37.3632 1.69978 38.7317 1.36907 38.748 1.38241C38.7642 1.39567 38.7341 1.68668 38.6811 2.029ZM31.0492 3.57222C32.8381 3.94389 34.2166 5.1695 34.8125 6.91833C35.0025 7.47554 35.029 7.69536 35.1167 9.43713L35.1552 10.2023L32.4782 10.2036C30.4437 10.2044 29.6887 10.2315 29.332 10.316C29.0487 10.3833 28.8521 10.3976 28.836 10.3523C28.8214 10.3111 28.6698 10.0676 28.4992 9.81131C27.4345 8.21175 25.7272 8.14897 24.643 9.6695C24.4494 9.94096 24.2461 10.2236 24.1911 10.2975C24.0994 10.421 24.0564 10.4226 23.6635 10.3171C23.3274 10.2269 22.6605 10.2023 20.5488 10.2023H17.8617L17.914 9.08397C17.9791 7.68986 18.1038 7.05246 18.4525 6.33257C19.1119 4.97142 20.3085 3.9818 21.7447 3.61004C22.3825 3.44484 24.0572 3.38669 27.3374 3.41565C29.8217 3.43762 30.5489 3.46831 31.0492 3.57222ZM15.9173 4.00275C16.4379 4.07456 18.1067 4.45236 18.1715 4.51303C18.1852 4.5259 18.0721 4.71001 17.9202 4.92214C17.5744 5.4051 17.1267 6.35109 16.9999 6.86693C16.9469 7.08275 16.8808 7.28727 16.853 7.3214C16.7433 7.45647 15.7904 6.30494 15.4345 5.60703C15.1383 5.02604 14.744 4.04191 14.744 3.88347C14.744 3.8436 14.8216 3.85152 15.9173 4.00275ZM38.2882 3.87099C38.2882 4.02284 37.8358 5.15608 37.5725 5.664C37.2347 6.3153 36.2826 7.44611 36.177 7.3214C36.1482 7.28727 36.0648 7.03574 35.9918 6.7624C35.8369 6.18236 35.4876 5.4547 35.1059 4.91688C34.9573 4.70765 34.847 4.5259 34.8607 4.51303C34.9383 4.44028 36.6719 4.05588 37.3248 3.96665C38.225 3.84352 38.2882 3.83732 38.2882 3.87099ZM10.4131 5.58262C11.382 5.94637 12.3058 7.22456 12.8578 8.96523C13.074 9.6469 13.4924 11.6452 13.4924 11.9957C13.4924 12.0836 13.315 12.2184 12.9825 12.3828C12.7021 12.5216 12.4573 12.6352 12.4385 12.6352C12.4198 12.6352 12.3865 12.5203 12.3644 12.3801C12.3425 12.2399 12.266 11.7542 12.1947 11.301C12.0169 10.1727 11.6665 8.95228 11.3044 8.20108C10.7757 7.10433 10.1919 6.59225 9.46999 6.59225C8.70758 6.59225 8.26618 7.33482 7.27303 10.2883C6.49169 12.6119 6.12468 13.4115 5.58903 13.9575C4.63928 14.9256 3.50243 14.7487 2.13202 13.4196C1.4659 12.7736 1.3962 12.5849 1.68695 12.2141C1.97018 11.8527 2.23738 11.9266 2.90288 12.5502C3.45972 13.0719 4.01258 13.4199 4.28448 13.4199C4.53861 13.4199 4.9725 12.9273 5.28037 12.2891C5.4498 11.9379 5.85388 10.8395 6.17834 9.84812C6.92651 7.56226 7.32668 6.72002 7.96864 6.07994C8.23959 5.80982 8.56608 5.56551 8.72103 5.51693C9.18926 5.3701 9.92288 5.39866 10.4131 5.58262ZM21.641 7.55472C21.0117 7.85585 21.0121 9.29853 21.6416 9.64878C22.2705 9.99872 22.8912 8.89923 22.5376 8.06123C22.3466 7.60832 21.9716 7.39651 21.641 7.55472ZM30.9332 7.56116C30.4368 7.81347 30.2511 8.57432 30.531 9.20914C30.9152 10.0808 31.7728 9.77953 31.8585 8.74282C31.9233 7.95905 31.4185 7.31442 30.9332 7.56116ZM26.8583 9.84404C27.0939 9.96631 27.581 10.4753 27.7304 10.7552C27.8148 10.9135 27.7836 10.9675 27.3905 11.3435C27.1525 11.5712 26.8528 11.9027 26.7247 12.0801L26.4917 12.4029L26.3303 12.1409C26.2415 11.9967 25.9534 11.6727 25.6901 11.4207C25.1377 10.8921 25.1384 10.8563 25.7117 10.2322C26.1795 9.72302 26.4491 9.63175 26.8583 9.84404ZM23.6766 11.5417C24.7561 11.9066 25.5257 12.7348 25.8231 13.8516C25.8955 14.1234 25.9279 14.7892 25.9285 16.0195L25.9294 17.7951L25.245 17.7668C24.8686 17.7512 24.015 17.7223 23.3482 17.7026C22.0799 17.665 21.636 17.5816 20.898 17.2426C19.2309 16.4769 18.0789 14.8123 17.9834 13.0314C17.9636 12.6624 17.932 12.1398 17.913 11.87L17.8786 11.3795H20.5376C23.0184 11.3795 23.2288 11.3904 23.6766 11.5417ZM35.0705 12.4977C35.0155 13.7361 34.9133 14.1677 34.4711 15.0288C34.0672 15.8152 33.1181 16.7559 32.3435 17.1375C31.4584 17.5735 31.0406 17.6623 29.684 17.7026C29.0172 17.7223 28.1636 17.7512 27.7871 17.7668L27.1027 17.7951L27.1046 16.0195C27.1057 15.043 27.1427 14.0865 27.1869 13.8941C27.4371 12.8046 28.2966 11.873 29.3711 11.5266C29.7465 11.4056 30.1402 11.3874 32.4608 11.3836L35.1203 11.3792L35.0705 12.4977ZM30.9355 12.7701C30.5335 12.9157 30.4063 13.4383 30.7008 13.7339C30.9006 13.9343 31.3349 13.9414 31.51 13.7473C31.682 13.5567 31.6776 13.0855 31.5026 12.9313C31.3338 12.7826 31.0913 12.7136 30.9355 12.7701ZM21.4766 12.9989C21.3874 13.1126 21.3144 13.2668 21.3144 13.3415C21.3144 13.4162 21.3874 13.5703 21.4766 13.684C21.8017 14.0987 22.4877 13.8663 22.4877 13.3415C22.4877 12.8167 21.8017 12.5842 21.4766 12.9989ZM23.2963 14.713C23.0688 14.8729 23.0074 15.1787 23.1481 15.4515C23.3355 15.8152 23.6661 15.8771 24.0025 15.6116C24.5711 15.1629 23.8898 14.2959 23.2963 14.713ZM28.9936 14.7787C28.753 15.0358 28.769 15.4059 29.0297 15.6116C29.2657 15.7979 29.3643 15.8098 29.6373 15.685C29.8785 15.5747 30.018 15.2124 29.9193 14.9521C29.776 14.5741 29.2735 14.4799 28.9936 14.7787ZM20.8451 14.911C20.5909 15.1661 20.6097 15.4996 20.8926 15.7547C21.136 15.9741 21.3127 15.9777 21.5777 15.7686C21.991 15.4424 21.7593 14.7541 21.2362 14.7541C21.1058 14.7541 20.932 14.8239 20.8451 14.911ZM31.4048 14.911C31.1719 15.1448 31.1962 15.5648 31.4545 15.7686C31.5678 15.8581 31.7215 15.9313 31.7959 15.9313C31.8704 15.9313 32.024 15.8581 32.1373 15.7686C32.5507 15.4424 32.319 14.7541 31.7959 14.7541C31.6655 14.7541 31.4917 14.8239 31.4048 14.911ZM15.7665 22.1025C15.5601 22.3657 15.5628 22.4518 15.7991 23.1489C16.1177 24.0886 16.5615 24.7581 17.028 25.0026C17.4293 25.2129 18.0356 25.1448 18.6683 24.8183C19.3316 24.4762 19.5112 24.2266 19.3593 23.8585C19.3085 23.7354 19.1625 23.5921 19.0331 23.5383C18.8221 23.4507 18.7466 23.4664 18.2715 23.697C17.9814 23.8378 17.6762 23.9399 17.5933 23.924C17.4136 23.8894 17.0665 23.2833 16.8811 22.6805C16.7085 22.1191 16.5098 21.8957 16.1831 21.8957C16.0014 21.8957 15.8823 21.9548 15.7665 22.1025Z"
+                          fill="#EF927E" />
+                      </svg>
+
+                    </div>
+                    <div>
+                      <h2 class="ms-4 gil-bold font-22 text-pink let-01"> PET ADOPTION</h2>
+                    </div>
+                  </div>
+                  <p class="text-pet-muted font-20 product-light">It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially.into electronic typesetting, remaining
+                    essentially. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero-5 -->
+  <section id="hero-5">
+    <div class="container">
+
+      <div class="row py-5  center-left ">
+        <div class="col-lg-4 col-12  ">
+          <div class="text-trape-one">
+            <h1 class="text-pink-black heading-one width-75 gil-black font-45">Most Popular
+              Dog Breeds</h1>
+            <p class="font-20 text-light product-light">It has survived not only five centuries
+              but also the leap into electronic
+              typesetting, remaining essentially
+              unchanged.It hassurvived not only
+              five centuries, but also the leap into
+              electronic typesetting,</p>
+          </div>
+        </div>
+        <div class="col-lg-8 col-12 both-pandding-remove pet-carousel">
+          <!--  -->
+          <div class="container">
+            <div id="pet-name" class="">
+              <div class="hx-tp  h-100">
+                <div id="custome-carousel-banner" class="">
+                  <div class="ms-1  contain-btn 
+                                      ">
+                    <div class="carousel-main-cart-one  mx-1 " id="carousel-custome-card">
+                      <div class="scroller-card-img scrollbar bounce-three" id="scroll-nav">
+                        <!-- card-->
+
+                        <div class="card-item ">
+                          <div class="card-pet p-3 p-sm-4">
+                            <div class="d-flex flex-column  py-3">
+                              <div class="d-flex justify-content-center align-items-stretch">
+                                <div class="pet-image-box">
+                                  <img src="./image/hero-5-1.png" class="img-fluid" alt="">
+                                </div>
+                              </div>
+                              <div class="center mt-3 ">
+                                <h2 class="product-light text-white font-25 text-uppercase">GERMAN SHEPHERD</h2>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-item ">
+                          <div class="card-pet p-3 p-sm-4">
+                            <div class="d-flex flex-column  py-3">
+                              <div class="d-flex justify-content-center align-items-stretch">
+                                <div class="pet-image-box ">
+                                  <img src="./image/hero-5.png" class="img-fluid" alt="">
+                                </div>
+                              </div>
+                              <div class="center mt-3 ">
+                                <h2 class="product-light text-white font-25 text-uppercase">GOLDEN RETRIEVER</h2>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-item ">
+                          <div class="card-pet p-3 p-sm-4">
+                            <div class="d-flex flex-column  py-3">
+                              <div class="d-flex justify-content-center align-items-stretch">
+                                <div class="pet-image-box ">
+                                  <img src="./image/hero-5-3.png" class="img-fluid" alt="">
+                                </div>
+                              </div>
+                              <div class="center mt-3 ">
+                                <h2 class="product-light text-white font-25 text-uppercase">Tommy RETRIEVER</h2>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-item ">
+                          <div class="card-pet p-3 p-sm-4">
+                            <div class="d-flex flex-column  py-3">
+                              <div class="d-flex justify-content-center align-items-stretch">
+                                <div class="pet-image-box ">
+                                  <img src="./image/hero-5-4.png" class="img-fluid" alt="">
+                                </div>
+                              </div>
+                              <div class="center mt-3 ">
+                                <h2 class="product-light text-white font-25 text-uppercase">Joxi RETRIEVER</h2>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- btn -->
+                  <div class="carousel-postion-button
+                                      h-100 px-sm-1">
+                    <div class="carousel-tauch" id="leftBtn">
+                      <div class="leftBtn mr-5">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </div>
+                    </div>
+                    <div class="carousel-tauch" id="rightBtn">
+                      <div class="rightBtn ml-5">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero-6 -->
+  <section id="hero-6" class="hero-6">
+    <div class="container">
+      <div class="py-5 text-trape-two">
+        <h1 class="text-pink text-end gil-black heding-x-i font-45">Puppies Available To Adopt</h1>
+        <div class="d-flex justify-content-end">
+          <p class="font-20 pargrph-muted text-end product-light width-80">It has survived not only five centuries,
+            but also the
+            leap into electronic typesetting, remaining
+            essentially unchanged. It hassurvived not only five centuries, but also the leap into electronic
+            typesetting,
+          </p>
+        </div>
+      </div>
+
+      <div class="row adopt-card">
+        <div class="col-xl-3 center-md  col-lg-4 col-md-6 col-12  mb-5">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-6  center">
+                <img src="./image/hero-06-1.png" class="img-fluid" alt="">
+              </div>
+              <div class="my-2 detail-pet">
+                <h2 class="gil-black let-space-03 marg-0 text-pink text-uppercase font-30">coco</h2>
+                <h3 class="product-light marg-0 text-capitalize let-space-05 text-pet-muted font-20">Golden Retriever
+                </h3>
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">Birth : 20 June 2022</p>
+              </div>
+              <a href="" class="btn-pet-buy-6 text-decoration mt-2 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 center-md  col-lg-4 col-md-6 col-12  mb-5">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-6  center">
+                <img src="./image/hero-6-2.png" class="" alt="">
+              </div>
+              <div class="my-2 detail-pet">
+                <h2 class="gil-black let-space-03 marg-0 text-pink text-uppercase font-30">SEETU</h2>
+                <h3 class="product-light marg-0 text-capitalize let-space-05 text-pet-muted font-20">Golden Retriever
+                </h3>
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">Birth : 20 June 2022</p>
+              </div>
+              <a href="" class="btn-pet-buy-6 text-decoration mt-2 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 center-md  col-lg-4 col-md-6 col-12  mb-5">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-6  center">
+                <img src="./image/hero-6-3.png" class="img-fluid" alt="">
+              </div>
+              <div class="my-2 detail-pet">
+                <h2 class="gil-black let-space-03 marg-0 text-pink text-uppercase font-30">CHARLEE</h2>
+                <h3 class="product-light marg-0 text-capitalize let-space-05 text-pet-muted font-20">German Shepherd
+                </h3>
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">Birth : 20 June 2022</p>
+              </div>
+              <a href="" class="btn-pet-buy-6 text-decoration mt-2 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 center-md col-lg-4 col-md-6 col-12  mb-5">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-6  center">
+                <img src="./image/hero-6-4.png" class="img-fluid" alt="">
+              </div>
+              <div class="my-2 detail-pet">
+                <h2 class="gil-black let-space-03 marg-0 text-pink text-uppercase font-30">JACK</h2>
+                <h3 class="product-light marg-0 text-capitalize let-space-05 text-pet-muted font-20">Havanese</h3>
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">Birth : 18 June 2021</p>
+              </div>
+              <a href="" class="btn-pet-buy-6 text-decoration mt-2 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 center-md  col-lg-4 col-md-6 col-12  mb-5">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-6  center">
+                <img src="./image/hero-6-5.png" class="" alt="">
+              </div>
+              <div class="my-2 detail-pet">
+                <h2 class="gil-black let-space-03 marg-0 text-pink text-uppercase font-30">KESY</h2>
+                <h3 class="product-light marg-0 text-capitalize let-space-05 text-pet-muted font-20">Tibetan Terrier
+                </h3>
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">Birth : 20 June 2022</p>
+              </div>
+              <a href="" class="btn-pet-buy-6 text-decoration mt-2 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 center-md  col-lg-4 col-md-6 col-12  mb-5">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-6  center">
+                <img src="./image/hero-6-6.png" class="" alt="">
+              </div>
+              <div class="my-2 detail-pet">
+                <h2 class="gil-black let-space-03 marg-0 text-pink text-uppercase font-30">JUJU</h2>
+                <h3 class="product-light marg-0 text-capitalize let-space-05 text-pet-muted font-20">Doberman </h3>
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">Birth : 18 Sep 2022</p>
+              </div>
+              <a href="" class="btn-pet-buy-6 text-decoration mt-2 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 center-md  col-lg-4 col-md-6 col-12  mb-5">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-6  center">
+                <img src="./image/hero-6-7.png" class="" alt="">
+              </div>
+              <div class="my-2 detail-pet">
+                <h2 class="gil-black let-space-03 marg-0 text-pink text-uppercase font-30">CASY</h2>
+                <h3 class="product-light marg-0 text-capitalize let-space-05 text-pet-muted font-20">Tibetan Terrier
+                </h3>
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">Birth : 20 June 2022</p>
+              </div>
+              <a href="" class="btn-pet-buy-6 text-decoration mt-2 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 center-md  col-lg-4 col-md-6 col-12  mb-5">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-6  center">
+                <img src="./image/hero-6-2-1.png" class="" alt="">
+              </div>
+              <div class="my-2 detail-pet">
+                <h2 class="gil-black let-space-03 marg-0 text-pink text-uppercase font-30">GOLDIE</h2>
+                <h3 class="product-light marg-0 text-capitalize let-space-05 text-pet-muted font-20">Havanese</h3>
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">Birth : 20 June 2022</p>
+              </div>
+              <a href="" class="btn-pet-buy-6 text-decoration mt-2 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero-7 -->
+  <section id="hero-7" class="hero-7">
+    <div class="container py-5">
+      <div class="textFoure">
+        <h1 class="text-pink gil-black heding-x-ii font-45">Products For Your Pet</h1>
+        <p class="font-20 text-pink product-light width-80">It has survived not only five centuries, but also the leap
+          into electronic typesetting, remaining
+          essentially unchanged. It hassurvived not only five centuries, but also the leap into electronic typesetting,
+        </p>
+      </div>
+      <!-- food for pet -->
+      <div class="row product-card">
+        <div class="col-xl-3 center-md  mt-5  col-lg-4 col-md-6 col-12  ">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-7  center">
+                <img src="./image/hero-7-1.png" class="img-fluid" alt="">
+              </div>
+              <div class="my-2 pet-food-detail  ">
+                <h2 class="product-med let-space-03 marg-0 text-pet-muted text-capitalize font-20">Pedigree Vital :
+                  Immunity
+                  Dog Food</h2>
+
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">It has survived not five centuries,
+                  but also the leap into electronic.</p>
+              </div>
+              <a href="" class="btn-pet-buy-7 text-decoration my-1 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 center-md  mt-5 col-lg-4 col-md-6 col-12  ">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column   h-100">
+              <div class="img-card-box-7  center">
+                <img src="./image/hero-7-2.png" class="img-fluid" alt="">
+              </div>
+              <div class="my-2 pet-food-detail ">
+                <h2 class="product-med let-space-03 marg-0 text-pet-muted text-capitalize font-20">Silicon : Pet Food
+                  bowl
+                  (Green)</h2>
+
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">It has survived not five centuries,
+                  but also the leap into electronic.</p>
+              </div>
+              <a href="" class="btn-pet-buy-7 text-decoration my-1 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 center-md  mt-5  col-lg-4 col-md-6 col-12  ">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-7  center">
+                <img src="./image/hero-7-3.png" class="img-fluid" alt="">
+              </div>
+              <div class="my-2 pet-food-detail">
+                <h2 class="product-med let-space-03 marg-0 text-pet-muted text-capitalize font-20">leather Dog Belt With
+                  Steel Chain</h2>
+
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">It has survived not five centuries,
+                  but also the leap into electronic.</p>
+              </div>
+              <a href="" class="btn-pet-buy-7 text-decoration my-1 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 center mt-5  col-lg-4 col-md-6 col-12  ">
+          <div class="card-pet-buy p-4">
+            <div class="d-flex flex-column">
+              <div class="img-card-box-7  center">
+                <img src="./image/hero-7-4 (1).png" class="img-fluid" alt="">
+              </div>
+              <div class="my-2 pet-food-detail">
+                <h2 class="product-med let-space-03 marg-0 text-pet-muted text-capitalize font-20">Drool Food : Healthy
+                  Dog
+                  Nutrition Food</h2>
+                <p class="pargrph-muted marg-0 font-17 let-space-03 product-light">It has survived not five centuries,
+                  but also the leap into electronic.</p>
+              </div>
+              <a href="" class="btn-pet-buy-7 text-decoration my-1 center">
+                <div>
+                  <h4 class="product-light let-space-03  mt-2 font-20">Price: $25</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero-8 -->
+  <section id="hero-8" class="hero-8">
+    <div class="container">
+
+      <div class="py-5 textFive">
+        <h1 class="text-pink text-end gil-black hedingfive font-45">Our Team Members</h1>
+        <div class="d-flex justify-content-end">
+          <p class="font-20 pargrph-muted text-end product-light width-80">It has survived not only five centuries,
+            but also the
+            leap into electronic typesetting, remaining
+            essentially unchanged. It hassurvived not only five centuries, but also the leap into electronic
+            typesetting,
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="row name-adopt-owner py-5">
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="card-8 p-4">
+            <div class="d-flex flex-sm-row flex-column">
+              <div class="center-sm-start">
+                <div class="card-img-8-box ">
+                  <img src="./image/hero-8-1.png" class="img-fluid" alt="">
+                </div>
+
+              </div>
+              <div class="center ms-sm-4 mt-3 mt-sm-0">
+                <div>
+                  <h2 class="text-pet-muted gil-extra-bold marg-0 font-30 text-capitalize">Amanda Joseph</h2>
+                  <p class="font-20 pargrph-muted marg-0 product-light let-space-05"> It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                  <div class="d-flex  mt-2">
+                    <a href="https://in.linkedin.com/?trk=IN-SEM_google-adwords_Jordan-brand-sign-up&mcid=6844056167778418689&trk2=ga_campid=14650114788_asid=127961666300_crid=601257986830_kw=linked%20in%20login_d=c_tid=kwd-8081146249_n=g_mt=e_geo=9062189_slid=&gclid=Cj0KCQjwof6WBhD4ARIsAOi65aildZCWptHExFCOTuUptFxbverUq5w3C2BrDp892M6U_TrDvkdKE1waAhQZEALw_wcB&gclsrc=aw.ds"
+                      target="_blank" class="font-20 me-3"><i class="fa-brands text-pink fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/home.php" class="font-20 me-3"><i
+                        class="fa-brands  text-pink fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="font-20 me-3"><i
+                        class="fa-brands text-pink fa-instagram"></i></a>
+                    <a href="https://twitter.com/i/flow/login" class="font-20 me-3"><i
+                        class="fa-brands text-pink fa-twitter"></i></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="card-8 p-4">
+            <div class="d-flex flex-sm-row flex-column">
+              <div class="center-sm-start">
+                <div class="card-img-8-box">
+                  <img src="./image/hero-8-2.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="center ms-sm-4 mt-3 mt-sm-0 ">
+                <div>
+                  <h2 class="text-pet-muted gil-extra-bold marg-0 font-30 text-capitalize">Amanda Joseph</h2>
+                  <p class="font-20 pargrph-muted marg-0 product-light let-space-05"> It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                  <div class="d-flex mt-2">
+                    <a href="https://in.linkedin.com/?trk=IN-SEM_google-adwords_Jordan-brand-sign-up&mcid=6844056167778418689&trk2=ga_campid=14650114788_asid=127961666300_crid=601257986830_kw=linked%20in%20login_d=c_tid=kwd-8081146249_n=g_mt=e_geo=9062189_slid=&gclid=Cj0KCQjwof6WBhD4ARIsAOi65aildZCWptHExFCOTuUptFxbverUq5w3C2BrDp892M6U_TrDvkdKE1waAhQZEALw_wcB&gclsrc=aw.ds"
+                      target="_blank" class="font-20 me-3"><i class="fa-brands text-pink fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/home.php" class="font-20 me-3"><i
+                        class="fa-brands  text-pink fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="font-20 me-3"><i
+                        class="fa-brands text-pink fa-instagram"></i></a>
+                    <a href="https://twitter.com/i/flow/login" class="font-20 me-3"><i
+                        class="fa-brands text-pink fa-twitter"></i></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="card-8 p-4">
+            <div class="d-flex flex-sm-row flex-column">
+              <div class="center-sm-start">
+                <div class="card-img-8-box ">
+                  <img src="./image/hero-8-12 (3).png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="center ms-sm-4 mt-3 mt-sm-0">
+                <div>
+                  <h2 class="text-pet-muted gil-extra-bold marg-0 font-30 text-capitalize">Amanda Joseph</h2>
+                  <p class="font-20 pargrph-muted marg-0 product-light let-space-05"> It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                  <div class="d-flex  mt-2">
+                    <a href="https://in.linkedin.com/?trk=IN-SEM_google-adwords_Jordan-brand-sign-up&mcid=6844056167778418689&trk2=ga_campid=14650114788_asid=127961666300_crid=601257986830_kw=linked%20in%20login_d=c_tid=kwd-8081146249_n=g_mt=e_geo=9062189_slid=&gclid=Cj0KCQjwof6WBhD4ARIsAOi65aildZCWptHExFCOTuUptFxbverUq5w3C2BrDp892M6U_TrDvkdKE1waAhQZEALw_wcB&gclsrc=aw.ds"
+                      target="_blank" class="font-20 me-3"><i class="fa-brands text-pink fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/home.php" class="font-20 me-3"><i
+                        class="fa-brands  text-pink fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="font-20 me-3"><i
+                        class="fa-brands text-pink fa-instagram"></i></a>
+                    <a href="https://twitter.com/i/flow/login" class="font-20 me-3"><i
+                        class="fa-brands text-pink fa-twitter"></i></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="card-8 p-4">
+            <div class="d-flex flex-sm-row flex-column">
+              <div class="center-sm-start">
+                <div class="card-img-8-box">
+                  <img src="./image/hero-8-12 (2).png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="center ms-sm-4 mt-3 mt-sm-0">
+                <div>
+                  <h2 class="text-pet-muted gil-extra-bold marg-0 font-30 text-capitalize">Amanda Joseph</h2>
+                  <p class="font-20 pargrph-muted marg-0 product-light let-space-05"> It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                  <div class="d-flex  mt-2">
+                    <a href="https://in.linkedin.com/?trk=IN-SEM_google-adwords_Jordan-brand-sign-up&mcid=6844056167778418689&trk2=ga_campid=14650114788_asid=127961666300_crid=601257986830_kw=linked%20in%20login_d=c_tid=kwd-8081146249_n=g_mt=e_geo=9062189_slid=&gclid=Cj0KCQjwof6WBhD4ARIsAOi65aildZCWptHExFCOTuUptFxbverUq5w3C2BrDp892M6U_TrDvkdKE1waAhQZEALw_wcB&gclsrc=aw.ds"
+                      target="_blank" class="font-20 me-3"><i class="fa-brands text-pink fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/home.php" class="font-20 me-3"><i
+                        class="fa-brands  text-pink fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="font-20 me-3"><i
+                        class="fa-brands text-pink fa-instagram"></i></a>
+                    <a href="https://twitter.com/i/flow/login" class="font-20 me-3"><i
+                        class="fa-brands text-pink fa-twitter"></i></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- hro-9 -->
+  <section class="hero-9" id="hero-9">
+    <div class="test-9">
+      <div class="bg-hero9-filter pb-4">
+        <img src="./image/hero-9.png" class="img-fluid  img-box-9" alt="">
+      </div>
+      <div class="continbox-hero-9 mx-3">
+        <div class=" py-5">
+          <h1 class="gil-black text-center font-45 text-white marg-0 ">Testimonials</h1>
+          <div class="center">
+            <div class="width-75">
+              <h2 class="text-white font-20 text-center product-light"> It has survived not only five centuries, but
+                also
+                the leap into electronic typesetting, remaining
+                essentially unchanged. It hassurvived not only five centuries,It has survived not only five centuries
+                but also the leap into electronic typesetting,</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carouselBox mt-sm-5 mt-3" id="carouselBox">
+
+          <!-- Slider main container -->
+          <div class="swiper-container ">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="d-flex p-4">
+                  <div class="d-flex flex-xl-row  flex-column">
+                    <div class="d-flex justify-content-center justify-content-xl-start">
+                      <div class="img-round-9 ">
+                        <div class="img-main9-box">
+                          <img src="./image/hero-8-1.png" class="img-con-9" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ms-lg-4 mt-4 mt-xl-0">
+                      <p class="font-20 let-space-05 detail-review marg-0  text-white product-light">It has survived not
+                        only five centuries, but
+                        also the leap into electronic typesetting,
+                        remaining essentially unchanged.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="review-customer-name">
+                          <h3 class="gil-SemiBold font-22 marg-0 text-capitalize text-white">Allesia Ciara</h3>
+                        </div>
+                        <div>
+                          <img src="./image/qoute.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="d-flex p-4">
+                  <div class="d-flex flex-xl-row  flex-column">
+                    <div class="d-flex justify-content-center justify-content-xl-start">
+                      <div class="img-round-9 ">
+                        <div class="img-main9-box">
+                          <img src="./image/hero-8-2.png" class="img-con-9" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ms-lg-4 mt-4 mt-xl-0">
+                      <p class="font-20 let-space-05 detail-review marg-0  text-white product-light">It has survived not
+                        only five centuries, but
+                        also the leap into electronic typesetting,
+                        remaining essentially unchanged.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="review-customer-name">
+                          <h3 class="gil-SemiBold font-22 marg-0 text-capitalize text-white">Allesia Ciara</h3>
+                        </div>
+                        <div>
+                          <img src="./image/qoute.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="d-flex p-4">
+                  <div class="d-flex flex-xl-row  flex-column">
+                    <div class="d-flex justify-content-center justify-content-xl-start">
+                      <div class="img-round-9 ">
+                        <div class="img-main9-box">
+                          <img src="./image/hero-8-2.png" class="img-con-9" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ms-lg-4 mt-4 mt-xl-0">
+                      <p class="font-20 let-space-05 detail-review marg-0  text-white product-light">It has survived not
+                        only five centuries, but
+                        also the leap into electronic typesetting,
+                        remaining essentially unchanged.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="review-customer-name">
+                          <h3 class="gil-SemiBold font-22 marg-0 text-capitalize text-white">Allesia Ciara</h3>
+                        </div>
+                        <div>
+                          <img src="./image/qoute.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="d-flex p-4">
+                  <div class="d-flex flex-xl-row  flex-column">
+                    <div class="d-flex justify-content-center justify-content-xl-start">
+                      <div class="img-round-9 ">
+                        <div class="img-main9-box">
+                          <img src="./image/hero-8-1.png" class="img-con-9" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ms-lg-4 mt-4 mt-xl-0">
+                      <p class="font-20 let-space-05 detail-review marg-0  text-white product-light">It has survived not
+                        only five centuries, but
+                        also the leap into electronic typesetting,
+                        remaining essentially unchanged.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="review-customer-name">
+                          <h3 class="gil-SemiBold font-22 marg-0 text-capitalize text-white">Allesia Ciara</h3>
+                        </div>
+                        <div>
+                          <img src="./image/qoute.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="d-flex p-4">
+                  <div class="d-flex flex-xl-row  flex-column">
+                    <div class="d-flex justify-content-center justify-content-xl-start">
+                      <div class="img-round-9 ">
+                        <div class="img-main9-box ">
+                          <img src="./image/hero-8-1.png" class="img-con-9" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ms-lg-4 mt-4 mt-xl-0">
+                      <p class="font-20 let-space-05 detail-review marg-0  text-white product-light">It has survived not
+                        only five centuries, but
+                        also the leap into electronic typesetting,
+                        remaining essentially unchanged.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="review-customer-name">
+                          <h3 class="gil-SemiBold font-22 marg-0 text-capitalize text-white">Allesia Ciara</h3>
+                        </div>
+                        <div>
+                          <img src="./image/qoute.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="d-flex p-4">
+                  <div class="d-flex flex-xl-row  flex-column">
+                    <div class="d-flex justify-content-center justify-content-xl-start">
+                      <div class="img-round-9 ">
+                        <div class="img-main9-box">
+                          <img src="./image/hero-8-12 (3).png" class="img-con-9" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ms-lg-4 mt-4 mt-xl-0">
+                      <p class="font-20 let-space-05 detail-review marg-0  text-white product-light">It has survived not
+                        only five centuries, but
+                        also the leap into electronic typesetting,
+                        remaining essentially unchanged.</p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="review-customer-name">
+                          <h3 class="gil-SemiBold font-22 marg-0 text-capitalize text-white">Allesia Ciara</h3>
+                        </div>
+                        <div>
+                          <img src="./image/qoute.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+          </div>
+          <div class="btn-test-9 d-xl-flex d-none ">
+            <div class="test-button-prev">
+              <svg class="btn-arrow-50" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2227_352)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.26 26.6202C7.04606 26.4062 6.92587 26.116 6.92587 25.8135C6.92587 25.5109 7.04606 25.2207 7.26 25.0068L16.9401 15.3267C17.1541 15.1128 17.4442 14.9926 17.7468 14.9926C18.0493 14.9926 18.3395 15.1128 18.5535 15.3267C18.7674 15.5406 18.8876 15.8308 18.8876 16.1334C18.8876 16.4359 18.7674 16.7261 18.5535 16.94L10.8207 24.6728L43.5604 24.6712C43.7104 24.6712 43.8589 24.7008 43.9975 24.7582C44.1361 24.8156 44.262 24.8997 44.3681 25.0058C44.4742 25.1119 44.5583 25.2378 44.6157 25.3764C44.6731 25.5149 44.7026 25.6635 44.7026 25.8135C44.7026 25.9635 44.6731 26.112 44.6157 26.2506C44.5583 26.3892 44.4742 26.5151 44.3681 26.6212C44.262 26.7272 44.1361 26.8114 43.9975 26.8688C43.8589 26.9262 43.7104 26.9557 43.5604 26.9557L10.8207 26.9541L18.5535 34.6869C18.7674 34.9008 18.8876 35.191 18.8876 35.4936C18.8876 35.7961 18.7674 36.0863 18.5535 36.3003C18.3395 36.5142 18.0493 36.6344 17.7468 36.6344C17.4442 36.6344 17.1541 36.5142 16.9401 36.3003L7.26 26.6202Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2227_352">
+                    <rect width="36.506" height="36.506" fill="white"
+                      transform="translate(51.627 25.8135) rotate(135)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="test-button-next">
+              <svg class="btn-arrow-50" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2227_354)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M44.8669 25.1933C45.0809 25.4073 45.2011 25.6974 45.2011 26C45.2011 26.3026 45.0809 26.5927 44.8669 26.8067L35.1868 36.4868C34.9729 36.7007 34.6827 36.8209 34.3802 36.8209C34.0776 36.8209 33.7874 36.7007 33.5735 36.4868C33.3595 36.2728 33.2394 35.9827 33.2394 35.6801C33.2394 35.3775 33.3595 35.0874 33.5735 34.8734L41.3063 27.1406L8.56656 27.1423C8.41656 27.1423 8.26802 27.1127 8.12944 27.0553C7.99086 26.9979 7.86493 26.9138 7.75887 26.8077C7.6528 26.7016 7.56866 26.5757 7.51126 26.4371C7.45385 26.2985 7.42431 26.15 7.42431 26C7.42431 25.85 7.45385 25.7015 7.51126 25.5629C7.56866 25.4243 7.6528 25.2984 7.75887 25.1923C7.86493 25.0862 7.99086 25.0021 8.12944 24.9447C8.26802 24.8873 8.41656 24.8577 8.56656 24.8577L41.3063 24.8594L33.5735 17.1266C33.3595 16.9126 33.2394 16.6225 33.2394 16.3199C33.2394 16.0173 33.3595 15.7272 33.5735 15.5132C33.7874 15.2993 34.0776 15.1791 34.3802 15.1791C34.6827 15.1791 34.9729 15.2993 35.1868 15.5132L44.8669 25.1933Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2227_354">
+                    <rect width="36.506" height="36.506" fill="white" transform="translate(0.5 26) rotate(-45)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero-10 -->
+  <section class="hero-10 py-3" id="hero-10">
+    <div class="container py-5">
+      <div>
+        <div class="textSix">
+          <h1 class="text-pink text-end gil-black hedingSix font-45">Something You Should Know About Pets</h1>
+          <div class="d-flex justify-content-end">
+            <p class="font-20 pargrph-muted text-end product-light width-80">It has survived not only five centuries,
+              but also the
+              leap into electronic typesetting, remaining
+              essentially unchanged. It hassurvived not only five centuries, but also the leap into electronic
+              typesetting,
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container card-con">
+      <!-- card -->
+      <div class="row pt-5 pet-about-card">
+        <div class="col-lg-4 col-md-6  mb-4 col-12 center">
+          <div class="hero-10-card">
+            <div class="img-card-10-box">
+              <img src="./image/hero-10-1.png" class="img-car-10-contain" alt="">
+              <a href="#" class="btn-pet-care text-decoration ">
+                <p class="text-white marg-0 product-light font-17 text-uppercase  let-space-05"> PET CARE</p>
+              </a>
+            </div>
+            <div class="card-10-detail p-4">
+              <h2 class="text-capitalize font-22 text-heding-black gil-bold">How to Take Care of Your Pet
+                in Summer Season</h2>
+              <h3 class=" text-capitalize text-pink product-light font-18"> 26 July 2022 - By Jhon Thomas</h3>
+              <p class="pargrph-muted product-light font-15 let-space-05 marg-0">
+                It has survived not only five centuries, but also the
+                leap into electronic typesetting. It was popularised in
+                the 1960s. It has survived not only five centuries,
+                but also the leap into electronic typesetting,
+                remaining essentiallz unchanged.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4  col-12 center">
+          <div class="hero-10-card">
+            <div class="img-card-10-box">
+              <img src="./image/hero-10-2.png" class="img-car-10-contain" alt="">
+              <a href="#" class="btn-pet-care text-decoration ">
+                <p class="text-white marg-0 product-light font-17 text-uppercase let-space-05"> PET CARE</p>
+              </a>
+            </div>
+            <div class="card-10-detail p-4">
+              <h2 class="text-capitalize font-22 text-heding-black gil-bold">How to Take Care of Your Pet
+                in Summer Season</h2>
+              <h3 class=" text-capitalize text-pink product-light font-18"> 26 July 2022 - By Jhon Thomas</h3>
+              <p class="pargrph-muted product-light font-15 let-space-05 marg-0">
+                It has survived not only five centuries, but also the
+                leap into electronic typesetting. It was popularised in
+                the 1960s. It has survived not only five centuries,
+                but also the leap into electronic typesetting,
+                remaining essentiallz unchanged.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6  mb-4 col-12 center">
+          <div class="hero-10-card">
+            <div class="img-card-10-box">
+              <img src="./image/hero-10-3.png" class="img-car-10-contain" alt="">
+              <a href="#" class="btn-pet-care text-decoration ">
+                <p class="text-white marg-0 product-light font-17 text-uppercase let-space-05"> PET CARE</p>
+              </a>
+            </div>
+            <div class="card-10-detail p-4">
+              <h2 class="text-capitalize font-22 text-heding-black gil-bold">How to Take Care of Your Pet
+                in Summer Season</h2>
+              <h3 class=" text-capitalize text-pink product-light font-18"> 26 July 2022 - By Jhon Thomas</h3>
+              <p class="pargrph-muted product-light font-15 let-space-05 marg-0">
+                It has survived not only five centuries, but also the
+                leap into electronic typesetting. It was popularised in
+                the 1960s. It has survived not only five centuries,
+                but also the leap into electronic typesetting,
+                remaining essentiallz unchanged.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero-11 -->
+  <section id="hero-11" class="hero-11">
+    <div class="container py-5">
+      <div class="textseven">
+        <h1 class="text-pink gil-black hedingSeven font-45">FAQs</h1>
+        <p class="font-20 pargrph-muted product-light width-80">It has survived not only five centuries, but also the
+          leap
+          into electronic typesetting, remaining
+          essentially unchanged. It hassurvived not only five centuries, but also the leap into electronic typesetting,
+        </p>
+      </div>
+      <!--  -->
+      <div class="py-5">
+        <div class="row flex-column-reverse flex-xl-row">
+          <div class="col-xl-7 center col-lg-12 overflow-hidden">
+            <div class="flex-column d-flex w-100 " id="accordion">
+              <div class="card-popup faqs-i  my-2 w-100" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne" id="heding-1">
+                <div class=" py-3 px-4">
+                  <div class="d-flex justify-content-between   center-left">
+                    <div>
+                      <h2 class="text-white product-med font-22 marg-0 let-space-03"> What is the adoption process of
+                        pet?</h2>
+                    </div>
+                    <div class="center-left">
+                      <i class="fa-solid fa-plus font-25 text-white"></i>
+                    </div>
+                  </div>
+                </div>
+                <div id="collapseOne" class="collapse show card-11-popup-header" aria-labelledby="heding-1" data-bs-parent="#accordion">
+                  <div class=" p-4 ">
+                    <p class="font-20 product-light let-space-05 text-white">
+                      It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                      essentially unchanged. It hassurvived not only five centuries, but also the leap into electronic
+                      typesetting,
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-popup faqs-ii  my-2  w-100" data-bs-toggle="collapse" data-bs-target="#heding-card-2"
+                aria-expanded="false" aria-controls="heding-card-2 " id="heding-2">
+                <div class="   py-3 px-4">
+                  <div class="d-flex justify-content-between   center-left">
+                    <div>
+                      <h2 class="text-white product-med font-22 marg-0 let-space-03">Which Pets do you have for
+                        adoption?</h2>
+                    </div>
+                    <div class="center-left">
+                      <i class="fa-solid fa-plus font-25 text-white"></i>
+                    </div>
+                  </div>
+                </div>
+                <div id="heding-card-2" class="collapse card-11-popup-header " aria-labelledby="heding-2" data-bs-parent="#accordion">
+                  <div class=" p-4 ">
+                    <p class="font-20 product-light let-space-05 text-white">
+                      It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                      essentially unchanged. It hassurvived not only five centuries, but also the leap into electronic
+                      typesetting,
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-popup faqs-iii  my-2 w-100" data-bs-toggle="collapse" data-bs-target="#heding-card-3"
+                aria-expanded="false" aria-controls="heding-card-3" id="heding-3">
+                <div class=" collapsed py-3 px-4">
+                  <div class="d-flex justify-content-between   center-left">
+                    <div>
+                      <h2 class="text-white product-med font-22 marg-0 let-space-03">Can I resell my Pet after adoption
+                        from you?</h2>
+                    </div>
+                    <div class="center-left">
+                      <i class="fa-solid fa-plus font-25 text-white"></i>
+                    </div>
+                  </div>
+                </div>
+                <div id="heding-card-3" class="collapse card-11-popup-header" aria-labelledby="heding-2" data-bs-parent="#accordion">
+                  <div class=" p-4 ">
+                    <p class="font-20 product-light let-space-05 text-white">
+                      It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                      essentially unchanged. It hassurvived not only five centuries, but also the leap into electronic
+                      typesetting,
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-popup faqs-iv   my-2 w-100" data-bs-toggle="collapse" data-bs-target="#heding-card-4"
+                aria-expanded="false" aria-controls="heding-card-4" id="heding-4">
+                <div class=" collapsed py-3 px-4">
+                  <div class="d-flex justify-content-between   center-left">
+                    <div>
+                      <h2 class="text-white product-med font-22 marg-0 let-space-03">Do you provide medical services for
+                        pets?</h2>
+                    </div>
+                    <div class="center-left">
+                      <i class="fa-solid fa-plus font-25 text-white"></i>
+                    </div>
+                  </div>
+                </div>
+                <div id="heding-card-4" class="collapse card-11-popup-header" aria-labelledby="heding-4" data-bs-parent="#accordion">
+                  <div class=" p-4 ">
+                    <p class="font-20 product-light let-space-05 text-white">
+                      It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                      essentially unchanged. It hassurvived not only five centuries, but also the leap into electronic
+                      typesetting,
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5  center col-lg-12">
+            <div class="hero-11-img-box ">
+              <svg class="image-frame-border" viewBox="0 0 503 594" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M250.931 586.062C329.785 584.11 418.248 587.337 467.635 525.776C517.139 464.068 503.376 376.075 480.054 300.457C459.202 232.847 410.649 183.041 350.475 145.904C278.215 101.307 193.616 37.9391 118.339 77.2181C43.7437 116.141 61.9434 223.27 44.3882 305.616C27.3894 385.353 -27.9829 471.224 20.3505 536.852C69.4107 603.467 168.274 588.109 250.931 586.062Z"
+                  fill="#FFF9F8" stroke="#EF927E" stroke-width="2" stroke-dasharray="4 4" />
+                <rect width="429" height="594" transform="matrix(-1 0 0 1 465.156 0)" transform="matrix(-1 0 0 1 433 0)"
+                  fill="url(#paet-1)" />
+                <defs>
+                  <pattern id="paet-1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_2227_552"
+                      transform="translate(-0.0020992) scale(0.00128087 0.000925069)" />
+                  </pattern>
+                  <image id="image0_2227_552" class="hero-11-pet-img" href="./image/hero-11.png"></image>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-dark-light">
+    <div class="container  py-4 py-md-5">
+      <div class="row ">
+        <div class="col-lg-7 col-12">
+          <div class="d-flex flex-column flex-md-row">
+            <div class="footer-logo-box d-flex justify-content-center align-content-start py-2 py-sm-0">
+              <div>
+                <img src="./image/fot-logo.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="ms-4 mt-3 mt-md-0">
+              <div class="font-18 product-light let-space-05 text-white text-center width-75 text-md-start">It has
+                survived not only five centuries, but
+                also the leap into electronic typesetting,
+                remaining essentiallzunchanged. It was
+                popularised in the 1960s with the release of
+                Letraset sheets containing Loremalso the leap into electronic typesetting,
+                remaining essentiallzunchanged. .</div>
+              <div class="d-flex justify-content-center justify-content-md-start mt-2">
+                <a href="https://in.linkedin.com/?trk=IN-SEM_google-adwords_Jordan-brand-sign-up&mcid=6844056167778418689&trk2=ga_campid=14650114788_asid=127961666300_crid=601257986830_kw=linked%20in%20login_d=c_tid=kwd-8081146249_n=g_mt=e_geo=9062189_slid=&gclid=Cj0KCQjwof6WBhD4ARIsAOi65aildZCWptHExFCOTuUptFxbverUq5w3C2BrDp892M6U_TrDvkdKE1waAhQZEALw_wcB&gclsrc=aw.ds"
+                  target="_blank" class="font-18 mx-2"><i class="fa-brands text-pink fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/home.php" class="font-18 mx-2"><i
+                    class="fa-brands  text-pink fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="font-18 mx-2"><i
+                    class="fa-brands text-pink fa-instagram"></i></a>
+                <a href="https://twitter.com/i/flow/login" class="font-18 mx-2"><i
+                    class="fa-brands text-pink fa-twitter"></i></i></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-12 ">
+          <div
+            class="d-md-flex flex-column justify-content-center  justify-content-lg-end flex-row-reverse flex-sm-row mt-4 mt-lg-0">
+            <div class="d-flex flex-md-column   justify-content-md-start justify-content-center ">
+              <div class="my-2 text-center text-md-left my-sm-0">
+                <h2 class="font-20 text-pink gil-bold  text-capitalize">Address</h2>
+                <p class="font-18 product-light text-white">255, Wilson Street<br>
+                  Jhonville, NYC</p>
+              </div>
+              <div class="my-2 ms-3 ml-md-0 text-center text-md-left">
+                <h2 class="font-20 text-pink gil-bold text-capitalize">Contact</h2>
+                <p class="font-18 product-light text-white">+1 852369 1475<br>
+                  hello@dropsalon.com</p>
+              </div>
+            </div>
+            <!-- navigation menu -->
+            <div class="navigation-footer d-flex text-center text-md-left  flex-column  ms-md-5  ">
+              <a href="#hero-4" class="font-18 gil-light text-decoration   my-2 my-sm-0">about us</a>
+              <a href="#hero-8" class="font-18 gil-light text-decoration  my-2">Services</a>
+              <a href="#hero-6" class="font-18 gil-light text-decoration  my-2">Pets</a>
+              <a href="#hero-7" class="font-18 gil-light text-decoration  my-2">Products</a>
+              <a href="#hero-9" class="font-18 gil-light text-decoration  my-2">Reviews</a>
+              <a href="#hero-2" class="font-18 gil-light text-decoration  my-2">Blogs</a>
+              <a href="#hero-11" class="font-18 gil-light text-decoration  my-2">Faqs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="copy-right">
+    <div class="container">
+      <div class="py-2 copy-text font-14 product-light text-center text-md-start">© RetryTech : All Rights Reserved</div>
+    </div>
+  </div>
+  <!-- js file -->
+  <script src="./js/index.js "></script>
+  <script>
+    function on() {
+      document.getElementById("overlay-nav").style.display = "block";
+      $("body").addClass("overflow-y-hide");
+      $("#overlay-nav").addClass("animate__animated animate__fadeInLeft")
+    }
+
+    function off() {
+      document.getElementById("overlay-nav").style.display = "none";
+      $("body").removeClass("overflow-y-hide");
+
+    }   
+  </script>
+  <script src="./js/smooth-scroll.js "></script>
+  <!-- bootstrap-5 -->
+  <script src="./js/popper.js"></script>
+  <script src="./js/bootstrap-5.js"></script>
+
+</body>
+
+</html>

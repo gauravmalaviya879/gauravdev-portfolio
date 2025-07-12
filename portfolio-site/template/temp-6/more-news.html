@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy Meg</title>
+</head>
+<!-- file attechment -->
+<link rel="stylesheet" href="./css/animate.css">
+<link rel="stylesheet" href="./css/bootstrap_5.css">
+<link rel="stylesheet" href="./css/happyMeg.css" />
+<!-- fontawosome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+<script src="https://kit.fontawesome.com/f7a0c19f26.js" crossorigin="anonymous"></script>
+
+<body>
+    <!-- navbar -->
+    <div id="navbar-second" class="header sticky-top">
+        <nav class="navbar navbar-expand-lg   navbar-news">
+            <div class="container-fluid">
+                <div class="navbar-collapse d-flex  justify-content-between" id="navbarnews">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="me-4 center-h ">
+                            <a class="a-remove " href="#">
+                                <h1 class="white-text font-36 text-uppercase mt-1 monst-bold m-0">happy</h1>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-flex ">
+                            <a class="a-remove nav-one-block" href="index.html">
+                                <p class="nav-link text-capitalize main-item monst-reg  m-0">news</p>
+                                <div class="center">
+                                    <div class="triangle-div">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-flex ">
+                            <a class="a-remove nav-one-block" href="music.html">
+                                <p class="nav-link text-capitalize main-item monst-reg  m-0">music</p>
+                                <div class="center">
+                                    <div class="triangle-div ">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-flex ">
+                            <a class="a-remove nav-one-block" href="art.html">
+                                <p class="nav-link text-capitalize main-item monst-reg  m-0">Art</p>
+                                <div class="center">
+                                    <div class="triangle-div ">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="d-none d-lg-flex ">
+                            <a class="a-remove nav-one-block" href="pride.html">
+                                <p class="nav-link text-capitalize main-item monst-reg  m-0">pride</p>
+                                <div class="center">
+                                    <div class="triangle-div ">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-flex ">
+                            <a class="a-remove nav-one-block" href="gaming.html">
+                                <p class="nav-link text-capitalize main-item monst-reg  m-0">gaming</p>
+                                <div class="center">
+                                    <div class="triangle-div ">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <div class="d-flex ">
+                            <div class="mx-3">
+                                <a href="#">
+                                    <i class="fa-solid white-text  fa-magnifying-glass font-23"></i>
+                                </a>
+                            </div>
+                            <div class="mx-2">
+                                <span onclick="openNav()" class="pointer">
+                                    <i class="fa-solid fa-bars white-text font-23"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- slidebar -->
+    <div id="mySidenav" class="sidenav">
+        <i class="fa-solid fa-xmark text-white closebtn" onclick="closeNav()"></i>
+        <a href="index.html" class="monst-bold font-25">News</a>
+        <a href="music.html" class="monst-bold font-25 ">Music</a>
+        <a href="pride.html" class="monst-bold font-25">Pride</a>
+        <a href="gaming.html" class="monst-bold font-25">Gaming</a>
+        <a href="art.html" class="monst-bold font-25">Art</a>
+        <a href="#" class="monst-bold font-25">Sex</a>
+        <a href="#" class="monst-bold font-25">Pro Audio</a>
+        <a href="#" class="monst-bold font-25">Film and TV</a>
+        <a href="#" class="monst-bold font-25">Lists</a>
+        <div class="my-4">
+            <a href="about.html" class="monst-reg text-uppercase font-14">ABOUT</a>
+            <a href="contact.html" class="monst-reg text-uppercase font-14">CONTACT US</a>
+            <a href="new-music.html" class="monst-reg text-uppercase font-14">BEST NEW MUSIC</a>
+            <a href="new-book.html" class="monst-reg text-uppercase font-14">BEST NEW BOOKS</a>
+            <a href="new-game.html" class="monst-reg text-uppercase font-14">BEST NEW GAMES</a>
+        </div>
+        <div id="social-icon">
+            <div class="a-social d-flex">
+                <a href="#" class=" social-icon "><i class="fa-brands fa-facebook-f   p-0 font-36 "></i></a>
+                <a href="#" class="ps-2 social-icon "><i class="fa-brands fa-instagram p-0 font-36 "></i></a>
+                <a href="#" class="ps-2 social-icon "><i class="fa-brands fa-twitter p-0 font-36 "></i></a>
+                <a href="#" class="ps-2 social-icon "><i class="fa-brands fa-youtube p-0 font-36 "></i></a>
+                <a href="#" class="ps-2 social-icon "><i class="fa-solid fa-cloud p-0 font-36 "></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="wrapper">
+        <div class="container">
+            <div>
+                <h5 class="font-15 monst-bold m-0 my-3">NEWS</h5>
+                <h1 class="font font-50 m-0 my-3 monst-bold width-85">WATCH: Keanu Reeves juggles nunchucks and axes in
+                    new
+                    trailer for ‘John Wick: Chapter 4’</h1>
+            </div>
+            <div class="row my-5">
+                <div class="col-lg-3 col-12">
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center ">
+                                <div class="sort-name monst-med center">
+                                    TD
+                                </div>
+                                <div class="center-h  h-100 ms-2">
+                                    <a href="#" class="a-remove">
+                                        <p class="font-14 monst-bold text-black m-0 p-0">
+                                            by Tom Disalvo</p>
+                                    </a>
+                                    <a href="#" class="a-remove">
+                                        <p class="font-14 monst-med text-black m-0 p-0">
+                                            November 11, 2022
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex   d-lg-none">
+                                <div class="socail-medai-side center">
+                                    <a href="#" class="a-remove slide-socsial-icon"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="socail-medai-left-box center">
+                                    <a href="#" class="a-remove slide-socsial-icon"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="d-flex menu-box">
+                                    <div class="socail-medai-left-box  center">
+                                        <a href="#" class="a-remove  slide-socsial-icon"><i
+                                                class="fa-solid fa-ellipsis"></i></a>
+                                    </div>
+                                    <div class="hidden-box d-none">
+                                        <div class="center socail-medai-left-box">
+                                            <a href="#" class="a-remove slide-socsial-icon"><i
+                                                    class="fa-regular fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="hidden-box d-none">
+                                        <div class="center socail-medai-left-box">
+                                            <a href="#" class="a-remove slide-socsial-icon"><i
+                                                    class="fa-solid fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-lg-column  my-5">
+                            <a href="#" class="d-flex a-remove my-1 me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0  monst-bold text-uppercase">drugs</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove my-1 me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0  monst-bold text-uppercase">news</h3>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column d-none d-lg-block">
+                            <div class="socail-medai-box center">
+                                <a href="#" class="a-remove slide-socsial-icon"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <div class="socail-medai-side center">
+                                <a href="#" class="a-remove slide-socsial-icon"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="d-flex menu-box">
+                                <div class="socail-medai-top-box  center">
+                                    <a href="#" class="a-remove  slide-socsial-icon"><i
+                                            class="fa-solid fa-ellipsis"></i></a>
+                                </div>
+                                <div class="hidden-box">
+                                    <div class="center socail-medai-top-box">
+                                        <a href="#" class="a-remove slide-socsial-icon"><i
+                                                class="fa-regular fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                                <div class="hidden-box">
+                                    <div class="center socail-medai-top-box">
+                                        <a href="#" class="a-remove slide-socsial-icon"><i
+                                                class="fa-solid fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-12">
+                    <div class="img-box-news-more">
+                        <img src="./image/artist-3.jpg" class="controll-inherit" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <h2 class="font-36 monst-med px-lg-5 px-3  left-border-black">
+                        Within days, Melbourne was crowned as both the Ketamine capital of Australia, and the city with
+                        the country’s finest tap water.
+                    </h2>
+                    <p class="monst-med font-20 m-0 my-5">
+                        The city’s top spot in Ketamine consumption was revealed by the Australian Criminal Intelligence
+                        Commission over the weekend. The agency sourced the results by testing wastewater across the
+                        country, specifically looking for traces of the drug via sewage samples of Australians’
+                        excrement. The findings revealed Victoria as home to the most Ketamine users in the country,
+                        particularly in rural areas.
+                    </p>
+                    <p class="monst-med font-20 m-0 my-5">
+                        While <a href="#" class="font-green-link monst-med font-18">Melbourne</a> assumed the Ketamine
+                        crown for the time being, the ACIC study also identified a
+                        large proportion of users in almost every other major city, particularly in New South Wales,
+                        Northern Territory, Tasmania and Queensland. The wastewater test placed Victoria second in the
+                        country in terms of cocaine consumption, with NSW consuming more of that drug per capita than
+                        any other state.
+                    </p>
+                    <img src="./image/artist-6.jpg" class="more-sub-img" alt="">
+                    <p class="monst-italic font-18 my-2 m-0">Credit: Shutterstock</p>
+                    <p class="monst-med font-20 m-0 my-5">
+                        Speaking of the drug detection methods, ACIC CEO Michael Phelan said the wastewater testing
+                        allows an “understanding [of] drug consumption at a population level [and] supports effective
+                        allocation of resources to priority areas. It also allows the progress of demand, supply and
+                        harm reduction strategies to be monitored [and has] the benefits of longitudinal analysis of
+                        drug trends.”
+                    </p>
+                    <p class="monst-med font-20 m-0 my-5">
+                        While it remains somewhat of a worrying trend for the city, Melbournians appear to be
+                        counteracting their Ketamine consumption with award-winning tap water. Over the weekend, the
+                        city took the top spot for the country’s cleanest, clearest and tastiest tap water, as part of a
+                        nationwide Best Tasting Tap Water competition held in NSW on Sunday (November 12). The contest
+                        was determined by a panel of blind taste testers, who judged the water’s colour, clarity, odour
+                        and taste.
+                    </p>
+                    <img src="./image/artist-7.jpg" class="more-sub-img" alt="">
+                    <p class="monst-italic font-18 my-2 m-0">Credit: Shutterstock</p>
+                    <p class="monst-med font-20 m-0 my-4">
+                        The city’s top spot in Ketamine consumption was revealed by the Australian Criminal Intelligence
+                        Commission over the weekend. The agency sourced the results by testing wastewater across the
+                        country, specifically looking for traces of the drug via sewage samples of Australians’
+                        excrement. The findings revealed Victoria as home to the most Ketamine users in the country,
+                        particularly in rural areas.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap ">
+                        <p class="monst-bold text-uppercase font-12 m-0 me-3">tags</p>
+                        <a href="#" class="btn-auto-follow a-remove my-2  px-2 center me-2">
+                            <p class=" monst-bold m-0 font-12 text-uppercase">austraila</p>
+                        </a>
+                        <a href="#" class="btn-auto-follow a-remove my-2  px-1 center me-2">
+                            <p class=" monst-bold m-0 font-12 text-uppercase">drugs</p>
+                        </a>
+                        <a href="#" class="btn-auto-follow a-remove my-2  px-1 center me-2">
+                            <p class=" monst-bold m-0 font-12 text-uppercase">japan</p>
+                        </a>
+                        <a href="#" class="btn-auto-follow a-remove my-2  px-1 center me-2">
+                            <p class=" monst-bold m-0 font-12 text-uppercase">water</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-1 ">
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="sub-news-list ">
+                        <div class="d-flex justify-content-center my-4 mx-2">
+                            <div class="carousel-title border-black-tri">
+                            </div>
+                            <h5 class="text-black font-20 ms-2 monst-bold text-uppercase">Trending On Happy</h5>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <div class="card-main-list-right">
+                                <div class="img-box-more-list my-2">
+                                    <img src="./image/gaming-3.jpeg" class="controll-inherit" alt="">
+                                </div>
+                                <a href="more-news.html" class="remove-a-border  p-0  monst-med font-14">What is pegging
+                                    and how is it
+                                    actually done?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="card-main-list-right">
+                                <div class="img-box-more-list my-2">
+                                    <img src="./image/gaming-5.jpg" class="controll-inherit" alt="">
+                                </div>
+                                <a href="more-news.html" class="remove-a-border  p-0  monst-med font-14">What is pegging
+                                    and how is it
+                                    actually done?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="card-main-list-right">
+                                <div class="img-box-more-list my-2">
+                                    <img src="./image/gaming-6.jpg" class="controll-inherit" alt="">
+                                </div>
+                                <a href="more-news.html" class="remove-a-border  p-0  monst-med font-14">What is pegging
+                                    and how is it
+                                    actually done?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4">
+                <div class="border-white-bronz "></div>
+
+                <div class="d-flex align-items-center pt-4">
+                    <div class="monst-bold font-20 me-3">
+                        Realted
+                    </div>
+                    <div class="black-border-line"></div>
+                </div>
+                <div class="d-flex flex-wrap py-2">
+                    <div class="py-2">
+                        <div class=" card-book-list">
+                            <div class="img-box-book">
+                                <img src="./image/artist-4.jpg" class="controll-inherit" alt="">
+                            </div>
+                            <div class="mx-3">
+                                <a href="more-news.html" class="remove-a-border  p-0  monst-med font-14">
+                                    Mike Tindall drank 50 beers on Aussie flight to compete with David Boon's record</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <div class="card-book-list">
+                            <div class="img-box-book">
+                                <img src="./image/gaming-5.jpg" class="controll-inherit" alt="">
+                            </div>
+                            <div class="mx-3">
+                                <a href="more-news.html" class="remove-a-border  p-0  monst-med font-14">
+                                    Mike Tindall drank 50 beers on Aussie flight to compete with David Boon's record</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <div class="card-book-list">
+                            <div class="img-box-book">
+                                <img src="./image/artist-3.jpg" class="controll-inherit" alt="">
+                            </div>
+                            <div class="mx-3">
+                                <a href="more-news.html" class="remove-a-border  p-0  monst-med font-14">
+                                    Mike Tindall drank 50 beers on Aussie flight to compete with David Boon's record</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="border-black">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="row p-lg-5 p-3">
+            <div class="col-lg-3 col-sm-6 col-12">
+                <a class="a-remove " href="#">
+                    <h1 class="text-white font-36 text-uppercase monst-bold m-0">happy</h1>
+                </a>
+                <p class="font-15 monst-med text-white width-75 my-4 my-lg-0">News and Entertainment from Australia's
+                    favourite
+                    youth
+                    publisher</p>
+                <div class="mt-5 ">
+                    <p class="font-14 monst-med text-brown-dark m-0">WE ARE HAPPY MEDIA PTY. LIMITED</p>
+                    <p class="font-12 monst-med text-brown-dark m-0">Level 1 325 King Street</p
+                        class="font-12 monst-med text-brown-dark">
+                    <p class="font-12 monst-med text-brown-dark m-0">Newtown NSW 2042 Australia</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 ">
+                <h5 class="m-0 monst-bold text-white my-4 my-lg-0 let-2-space text-uppercase font-14">company</h5>
+                <div class="d-flex flex-column mt-4">
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">About</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">CONTACT US</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">PHOTOGRAPHY STUDIO</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">BEST NEW MUSIC</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">BEST NEW BOOKS</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">BEST NEW GAMES</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 ">
+                <h5 class="m-0 monst-bold text-white let-2-space  my-4 my-lg-0 text-uppercase font-14">CATEGORIES</h5>
+                <div class="d-flex flex-column mt-4">
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">MUSIC</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">ART</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">PRIDE</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">GAMING</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">BOOKS</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">SEX</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">PRO AUDIO</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">FILM AND TV</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">LISTS</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 ">
+                <h5 class="m-0 monst-bold text-white let-2-space  my-4 my-lg-0 text-uppercase font-14">conntect</h5>
+                <div class="d-flex my-4">
+                    <a href="#" class="hover-white-green"><i
+                            class="fa-brands fa-facebook-f   p-0 font-30 me-3 "></i></a>
+                    <a href="#" class="hover-white-green"><i class="fa-brands fa-instagram p-0 font-30 me-3 "></i></a>
+                    <a href="#" class="hover-white-green"><i class="fa-brands fa-twitter p-0 font-30 me-3 "></i></a>
+                    <a href="#" class="hover-white-green"><i class="fa-brands fa-youtube p-0 font-30 me-3 "></i></a>
+                    <a href="#" class="hover-white-green"><i class="fa-solid fa-cloud p-0 font-30 me-3 "></i></a>
+                </div>
+                <h5 class="m-0 monst-bold text-white let-2-space text-uppercase font-14">SUBSCRIBE</h5>
+                <h5 class="m-0 monst-med text-brown-dark let-2-space my-3 font-14">GET HAPPY IN YOUR INBOX</h5>
+
+                <div class="d-flex flex-column flex-xl-row">
+                    <input class="input-box-white monst-med font-14 ps-3" placeholder="Your email address">
+                    </input>
+                    <a class="btn-signup-black monst-bold ms-xl-3 mt-2 mt-xl-0 center a-remove" href="#">
+                        sign up
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="center-h bg-black px-lg-5  px-3 py-3" id="">
+            <div class="d-flex justify-content-lg-between flex-column flex-lg-row ">
+                <div>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">© Copyright We Are Happy
+                        Media 2022</a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">Privacy Policy
+                    </a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">Terms</a>
+                </div>
+                <div>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">Facebook</a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">YouTube
+                    </a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">Instagram</a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">TikTok</a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap 5  script -->
+    <script src="./js/bootstrap_5.js"></script>
+    <script src="./js/popper.js"></script>
+    <!-- js file -->
+    <script src="./js/carousel-scroll.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- animation -->
+    <script src="./js/waypoint.js"></script>
+</body>
+
+</html>

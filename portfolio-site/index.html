@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Template Portfolio - Gaurav Malaviya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Template Portfolio</h1>
+    <p>Preview and visit live demos of all templates</p>
+  </header>
+
+  <main>
+    <section id="portfolio-scrollable">
+      <!-- 12 Template Cards -->
+      <!-- Replace links as needed -->
+      <!-- Row 1 -->
+      <div class="template-card">
+        <img src="img/temp-1.png" alt="Template 1" />
+        <h3>Template 1</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-1.png')">Preview</button>
+          <a href="template/temp-1/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+      <div class="template-card">
+        <img src="img/temp-2.png" alt="Template 2" />
+        <h3>Template 2</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-2.png')">Preview</button>
+          <a href="template/temp-2/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+      <div class="template-card">
+        <img src="img/temp-3.png" alt="Template 3" />
+        <h3>Template 3</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-3.png')">Preview</button>
+          <a href="template/temp-3/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="template-card">
+        <img src="img/temp-4.png" alt="Template 4" />
+        <h3>Template 4</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-4.png')">Preview</button>
+          <a href="template/temp-4/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+      <div class="template-card">
+        <img src="img/temp-5.png" alt="Template 5" />
+        <h3>Template 5</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-5.png')">Preview</button>
+          <a href="template/temp-5/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+      <div class="template-card">
+        <img src="img/temp-6.png" alt="Template 6" />
+        <h3>Template 6</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-6.png')">Preview</button>
+          <a href="template/temp-6/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="template-card">
+        <img src="img/temp-7.png" alt="Template 7" />
+        <h3>Template 7</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-7.png')">Preview</button>
+          <a href="template/temp-7/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+      <div class="template-card">
+        <img src="img/temp-8.png" alt="Template 8" />
+        <h3>Template 8</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-8.png')">Preview</button>
+          <a href="template/temp-8/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+      <div class="template-card">
+        <img src="img/temp-9.png" alt="Template 9" />
+        <h3>Template 9</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-9.png')">Preview</button>
+          <a href="template/temp-9/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="template-card">
+        <img src="img/temp-10.png" alt="Template 10" />
+        <h3>Template 10</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-10.png')">Preview</button>
+          <a href="template/temp-10/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+      <div class="template-card">
+        <img src="img/temp-11.png" alt="Template 11" />
+        <h3>Template 11</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-11.png')">Preview</button>
+          <a href="template/temp-11/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+      <div class="template-card">
+        <img src="img/temp-12.png" alt="Template 12" />
+        <h3>Template 12</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-12.png')">Preview</button>
+          <a href="template/temp-12/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+       <div class="template-card">
+        <img src="img/temp-13.png" alt="Template 13" />
+        <h3>Template 13</h3>
+        <div class="buttons">
+          <button onclick="viewTemplate('img/temp-13.png')">Preview</button>
+          <a href="template/temp-13/index.html" target="_blank">Visit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal"  onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

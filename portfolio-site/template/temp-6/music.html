@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy Meg</title>
+</head>
+<!-- file attechment -->
+<link rel="stylesheet" href="./css/animate.css">
+<link rel="stylesheet" href="./css/bootstrap_5.css">
+<link rel="stylesheet" href="./css/happyMeg.css" />
+<!-- fontawosome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+<script src="https://kit.fontawesome.com/f7a0c19f26.js" crossorigin="anonymous"></script>
+
+<body>
+    <!-- navbar -->
+    <div id="navbar-second" class="header sticky-top">
+        <nav class="navbar navbar-expand-lg   navbar-news">
+            <div class="container-fluid">
+                <div class="navbar-collapse d-flex  justify-content-between" id="navbarnews">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="me-4  ">
+                            <a class="a-remove " href="#">
+                                <h1 class="white-text  mt-1 font-36 text-uppercase monst-bold m-0">happy</h1>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-flex ">
+                            <a class="a-remove nav-one-block" href="index.html">
+                                <p class="nav-link text-capitalize main-item monst-reg  m-0">news</p>
+                                <div class="center">
+                                    <div class="triangle-div ">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-flex ">
+                            <a class="a-remove nav-one-block" href="music.html">
+                                <p class="nav-link text-capitalize main-item monst-reg  m-0">music</p>
+                                <div class="center">
+                                    <div class="triangle-div active">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-flex ">
+                            <a class="a-remove nav-one-block" href="art.html">
+                                <p class="nav-link text-capitalize main-item monst-reg  m-0">Art</p>
+                                <div class="center">
+                                    <div class="triangle-div ">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="d-none d-lg-flex ">
+                            <a class="a-remove nav-one-block" href="pride.html">
+                                <p class="nav-link text-capitalize main-item monst-reg  m-0">pride</p>
+                                <div class="center">
+                                    <div class="triangle-div ">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-flex ">
+                            <a class="a-remove nav-one-block" href="gaming.html">
+                                <p class="nav-link text-capitalize main-item monst-reg  m-0">Gaming</p>
+                                <div class="center">
+                                    <div class="triangle-div ">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                     
+
+                    </ul>
+                    <div>
+                        <div class="d-flex ">
+                            <div class="mx-3">
+                                <a href="#">
+                                    <i class="fa-solid white-text  fa-magnifying-glass font-23"></i>
+                                </a>
+                            </div>
+                            <div class="mx-2">
+                                <span onclick="openNav()" class="pointer">
+                                    <i class="fa-solid fa-bars white-text font-23"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- slidebar -->
+    <div id="mySidenav" class="sidenav">
+        <i class="fa-solid fa-xmark text-white closebtn" onclick="closeNav()"></i>
+        <a href="index.html" class="monst-bold font-25">News</a>
+        <a href="music.html" class="monst-bold font-25 ">Music</a>
+        <a href="pride.html" class="monst-bold font-25">Pride</a>
+        <a href="gaming.html" class="monst-bold font-25">Gaming</a>
+        <a href="art.html" class="monst-bold font-25">Art</a>
+        <a href="#" class="monst-bold font-25">Sex</a>
+        <a href="#" class="monst-bold font-25">Pro Audio</a>
+        <a href="#" class="monst-bold font-25">Film and TV</a>
+        <a href="#" class="monst-bold font-25">Lists</a>
+        <div class="my-4">
+            <a href="about.html" class="monst-reg text-uppercase font-14">ABOUT</a>
+            <a href="contact.html" class="monst-reg text-uppercase font-14">CONTACT US</a>
+            <a href="new-music.html" class="monst-reg text-uppercase font-14">BEST NEW MUSIC</a>
+            <a href="new-book.html" class="monst-reg text-uppercase font-14">BEST NEW BOOKS</a>
+            <a href="new-game.html" class="monst-reg text-uppercase font-14">BEST NEW GAMES</a>
+        </div>
+        <div id="social-icon">
+            <div class="a-social d-flex">
+                <a href="#" class=" social-icon "><i class="fa-brands fa-facebook-f   p-0 font-36 "></i></a>
+                <a href="#" class="ps-2 social-icon "><i class="fa-brands fa-instagram p-0 font-36 "></i></a>
+                <a href="#" class="ps-2 social-icon "><i class="fa-brands fa-twitter p-0 font-36 "></i></a>
+                <a href="#" class="ps-2 social-icon "><i class="fa-brands fa-youtube p-0 font-36 "></i></a>
+                <a href="#" class="ps-2 social-icon "><i class="fa-solid fa-cloud p-0 font-36 "></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="landing-page center-h">
+        <img src="./image/cery-2.jpg" class="img-landing" alt="">
+        <div class=" main-box-hero-1">
+            <div class="container ">
+                <div class="row flex-row-reverse">
+                    <div class="col-12 col-sm-7 col-xl-4">
+                        <div class="top-news-landing-box">
+                            <div class="center-r">
+                                <div class="triangle-landing">
+                                </div>
+                            </div>
+                            <h1 class="monst-bold text-white font-45 m-0 text-center">
+                                Freddie Mercury’s 1974 Rolls Royce Silver Shadow sells for over $500K
+                            </h1>
+                            <h2 class="font-14 monst-bold text-white text-center">By Amy Davidson</h2>
+                            <div class="center-r">
+                                <a href="#" class="a-remove  btn-more-landing-news center">
+                                    <p class="m-0  monst monst-bold">Read More</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- news-card -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+                <div class="card-news-all">
+                    <a href="#" class="img-box-newsList">
+                        <img src="./image/music-artist-1.jpg" class="news-img-controll" alt="">
+                    </a>
+                    <div class="my-2">
+                        <div class="d-flex ">
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0 monst-bold text-uppercase">FEATURES</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0  monst-bold text-uppercase">NEWS</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1   m-0 monst-bold text-uppercase">SEX</h3>
+                            </a>
+
+                        </div>
+                    </div>
+                    <a href="#" class="remove-a-border my-2 p-0  monst-med font-25">What is pegging and how is it
+                        actually done?</a>
+                    <p class="green-text monst-bold font-12 p-0">by <a href="#"
+                            class="green-text monst-bold text-green-outline">Amy Davidson</a> </p>
+                    <a href="#" class="a-remove">
+                        <p class=" monst-med font-20">Mike Tindall drank “close to 50 lagers” on a flight from Australia
+                            to
+                            England, in an effort to beat David Boon’s record of 52. Former…</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+                <div class="card-news-all">
+                    <a href="#" class="img-box-newsList">
+                        <img src="./image/artist-5.jpg" class="news-img-controll" alt="">
+                    </a>
+                    <div class="my-2">
+                        <div class="d-flex ">
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0 monst-bold text-uppercase">FEATURES</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0  monst-bold text-uppercase">music</h3>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <a href="#" class="remove-a-border my-2 p-0  monst-med font-25">What is pegging and how is it
+                        actually done?</a>
+                    <p class="green-text monst-bold font-12 p-0">by <a href="#"
+                            class="green-text monst-bold text-green-outline">Amy Davidson</a> </p>
+                    <a href="#" class="a-remove">
+                        <p class=" monst-med font-20">Mike Tindall drank “close to 50 lagers” on a flight from Australia
+                            to
+                            England, in an effort to beat David Boon’s record of 52. Former…</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+                <div class="card-news-all">
+                    <a href="#" class="img-box-newsList">
+                        <img src="./image/music-artist-2.jpg" class="news-img-controll" alt="">
+                    </a>
+                    <div class="my-2">
+                        <div class="d-flex ">
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0 monst-bold text-uppercase">FEATURES</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0  monst-bold text-uppercase">NEWS</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1   m-0 monst-bold text-uppercase">SEX</h3>
+                            </a>
+
+                        </div>
+                    </div>
+                    <a href="#" class="remove-a-border my-2 p-0  monst-med font-25">The AMP returns to Sydney for its
+                        18th Annual Prize</a>
+                    <p class="green-text monst-bold font-12 p-0">by <a href="#"
+                            class="green-text monst-bold text-green-outline">Amy Davidson</a> </p>
+                    <a href="#" class="a-remove">
+                        <p class=" monst-med font-20">2022 is the 18th consecutive year of The Australian Music Prize,
+                            sponsored by Melbourne-based SoundMerch – The SoundMerch AMP. Sponsored by SoundMerch, The
+                            Australian Music…</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+                <div class="card-news-all">
+                    <a href="#" class="img-box-newsList">
+                        <img src="./image/music-hero-6.jpg" class="news-img-controll" alt="">
+                    </a>
+                    <div class="my-2">
+                        <div class="d-flex ">
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0 monst-bold text-uppercase">FEATURES</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0  monst-bold text-uppercase">NEWS</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1   m-0 monst-bold text-uppercase">SEX</h3>
+                            </a>
+
+                        </div>
+                    </div>
+                    <a href="#" class="remove-a-border my-2 p-0  monst-med font-25">What is pegging and how is it
+                        actually done?</a>
+                    <p class="green-text monst-bold font-12 p-0">by <a href="#"
+                            class="green-text monst-bold text-green-outline">Amy Davidson</a> </p>
+                    <a href="#" class="a-remove">
+                        <p class=" monst-med font-20">Mike Tindall drank “close to 50 lagers” on a flight from Australia
+                            to
+                            England, in an effort to beat David Boon’s record of 52. Former…</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+                <div class="card-news-all">
+                    <a href="#" class="img-box-newsList">
+                        <img src="./image/music-artist-4.jpg" class="news-img-controll" alt="">
+                    </a>
+                    <div class="my-2">
+                        <div class="d-flex ">
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0 monst-bold text-uppercase">FEATURES</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0  monst-bold text-uppercase">music</h3>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <a href="#" class="remove-a-border my-2 p-0  monst-med font-25">What is pegging and how is it
+                        actually done?</a>
+                    <p class="green-text monst-bold font-12 p-0">by <a href="#"
+                            class="green-text monst-bold text-green-outline">Amy Davidson</a> </p>
+                    <a href="#" class="a-remove">
+                        <p class=" monst-med font-20">Mike Tindall drank “close to 50 lagers” on a flight from Australia
+                            to
+                            England, in an effort to beat David Boon’s record of 52. Former…</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+                <div class="card-news-all">
+                    <a href="#" class="img-box-newsList">
+                        <img src="./image/hero-7-music.jpg" class="news-img-controll" alt="">
+                    </a>
+                    <div class="my-2">
+                        <div class="d-flex ">
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0 monst-bold text-uppercase">FEATURES</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0  monst-bold text-uppercase">NEWS</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1   m-0 monst-bold text-uppercase">SEX</h3>
+                            </a>
+
+                        </div>
+                    </div>
+                    <a href="#" class="remove-a-border my-2 p-0  monst-med font-25">The AMP returns to Sydney for its
+                        18th Annual Prize</a>
+                    <p class="green-text monst-bold font-12 p-0">by <a href="#"
+                            class="green-text monst-bold text-green-outline">Amy Davidson</a> </p>
+                    <a href="#" class="a-remove">
+                        <p class=" monst-med font-20">2022 is the 18th consecutive year of The Australian Music Prize,
+                            sponsored by Melbourne-based SoundMerch – The SoundMerch AMP. Sponsored by SoundMerch, The
+                            Australian Music…</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+                <div class="card-news-all">
+                    <a href="#" class="img-box-newsList">
+                        <img src="./image/rapper-9-music.jpg" class="news-img-controll" alt="">
+                    </a>
+                    <div class="my-2">
+                        <div class="d-flex ">
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0 monst-bold text-uppercase">FEATURES</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1  m-0  monst-bold text-uppercase">NEWS</h3>
+                            </a>
+                            <a href="#" class="d-flex a-remove me-2 link-green">
+                                <div class="md-tri-black ">
+                                </div>
+                                <h3 class=" font-12 ms-1   m-0 monst-bold text-uppercase">SEX</h3>
+                            </a>
+
+                        </div>
+                    </div>
+                    <a href="#" class="remove-a-border my-2 p-0  monst-med font-25">The AMP returns to Sydney for its
+                        18th Annual Prize</a>
+                    <p class="green-text monst-bold font-12 p-0">by <a href="#"
+                            class="green-text monst-bold text-green-outline">Amy Davidson</a> </p>
+                    <a href="#" class="a-remove">
+                        <p class=" monst-med font-20">2022 is the 18th consecutive year of The Australian Music Prize,
+                            sponsored by Melbourne-based SoundMerch – The SoundMerch AMP. Sponsored by SoundMerch, The
+                            Australian Music…</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="center-r  py-5">
+            <a href="#" class="a-remove  btn-more-landing-news-black center">
+                <p class="m-0  monst monst-bold">loade More</p>
+            </a>
+
+        </div>
+    </div>
+    <!-- about -->
+    <div class="container pb-4">
+        <div class="border-white-bronz"></div>
+        <div>
+            <h1 class="font-45 monst-med text-black py-3 text-center">Welcome to Happy Mag’s New Music Feed</h1>
+            <p class="text-center monst-reg font-18 m-0 py-2">Considered a leading tastemaker in the emerging music and
+                arts space, Happy is stocked with the latest in music news. Stay up to date by subscribing to our
+                newsletter in the form below.</p>
+            <p class="text-center monst-reg font-18 m-0 py-2">Have you connected with us on social media yet? If not,
+                check out the links below:</p>
+            <div class="center-r py-4">
+                <div class="d-flex">
+                    <a href="#" class="btn-social-follow a-remove px-2 center me-2">
+                        <p class=" monst-bold m-0">Facebook</p>
+                    </a>
+                    <a href="#" class="btn-social-follow a-remove px-2 center me-2">
+                        <p class=" monst-bold m-0">twitter</p>
+                    </a>
+                    <a href="#" class="btn-social-follow a-remove px-2 center me-2">
+                        <p class=" monst-bold m-0">youtube</p>
+                    </a>
+                </div>
+            </div>
+            <p class="text-center monst-reg font-18 m-0 py-2">Here’s what’s currently trending in Happy music land:</p>
+            <div class="">
+                <div class="text-center py-2">
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">H MEXICAN PIZZA: THE
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">BON SCOTT
+                        MUSICAL</a>
+                </div>
+                <div class="text-center py-2">
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">MADONNA NFT
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">BON SCOTT
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">MEXICAN PIZZA: THE
+                        MUSICAL</a>
+                </div>
+                <div class="text-center py-2">
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">MADONNA NFT
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">BON SCOTT
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">H MEXICAN PIZZA: THE
+                        MUSICAL
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">sddsde PIZZA: THE
+                    </a>
+                </div>
+                <div class="text-center py-2">
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">MADONNA NFT
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">BON SCOTT
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">H MEXICAN PIZ THE
+                        MUSICAL
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                        <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">BON 
+                            MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">sddsde as: THE
+                    </a>
+                </div>
+                <div class="text-center py-2">
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">MADONNA NFT
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">BON SCOTT
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">H MEXICAN PIZZA: THE
+                        MUSICAL
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">sddsde PIZZA: THE
+                    </a>
+                </div>
+                <div class="text-center py-2">
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">MADONNA NFT
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">BON SCOTT
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">MEXICAN PIZZA: THE
+                        MUSICAL</a>
+                </div>
+                <div class="text-center py-2">
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">H MEXICAN PIZZA: THE
+                        MUSICAL</a><span class="mx-2 border-h-brown monst-med"></span>
+                    <a href="#" class="monst-med font-18 text-center mt-1   font-green-link m-0">BON SCOTT
+                        MUSICAL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mailbox -->
+    <div class="mailbox">
+        <div class="signup-box">
+            <div class="container">
+                <div class="main-box center">
+                    <div class="col-12 col-lg-7 px-3 px-lg-0">
+                        <h4 class="monst-bold m-0 font-20 text-center">Subscribe to Happy Mag</h4>
+                        <div class="my-3">
+                            <p class="m-0 font-50 monst-med text-center">For all the latest music, news and reviews.</p>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row">
+                            <input class="input-box monst-med font-14 ps-3" placeholder="Your email address">
+                            </input>
+                            <a class="btn-signup monst-bold ms-sm-3 mt-2 mt-sm-0 center a-remove" href="#">
+                                sign up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="row p-lg-5 p-3">
+            <div class="col-lg-3 col-sm-6 col-12">
+                <a class="a-remove " href="#">
+                    <h1 class="text-white font-36 text-uppercase monst-bold m-0">happy</h1>
+                </a>
+                <p class="font-15 monst-med text-white my-4 my-lg-0  width-75">News and Entertainment from Australia's favourite
+                    youth
+                    publisher</p>
+                <div class="mt-5 ">
+                    <p class="font-14 monst-med text-brown-dark m-0">WE ARE HAPPY MEDIA PTY. LIMITED</p>
+                    <p class="font-12 monst-med text-brown-dark m-0">Level 1 325 King Street</p
+                        class="font-12 monst-med text-brown-dark">
+                    <p class="font-12 monst-med text-brown-dark m-0">Newtown NSW 2042 Australia</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 ">
+                <h5 class="m-0 monst-bold text-white my-4 my-lg-0 let-2-space text-uppercase font-14">company</h5>
+                <div class="d-flex flex-column mt-4">
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">About</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">CONTACT US</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">PHOTOGRAPHY STUDIO</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">BEST NEW MUSIC</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">BEST NEW BOOKS</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">BEST NEW GAMES</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 ">
+                <h5 class="m-0 monst-bold text-white let-2-space  my-4 my-lg-0 text-uppercase font-14">CATEGORIES</h5>
+                <div class="d-flex flex-column mt-4">
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">MUSIC</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">ART</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">PRIDE</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">GAMING</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">BOOKS</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">SEX</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">PRO AUDIO</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">FILM AND TV</a>
+                    <a href="#" class="font-14 my-1 monst-med text-link-footer">LISTS</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 ">
+                <h5 class="m-0 monst-bold text-white let-2-space  my-4 my-lg-0 text-uppercase font-14">conntect</h5>
+                <div class="d-flex my-4">
+                    <a href="#" class="hover-white-green"><i
+                            class="fa-brands fa-facebook-f   p-0 font-30 me-3 "></i></a>
+                    <a href="#" class="hover-white-green"><i class="fa-brands fa-instagram p-0 font-30 me-3 "></i></a>
+                    <a href="#" class="hover-white-green"><i class="fa-brands fa-twitter p-0 font-30 me-3 "></i></a>
+                    <a href="#" class="hover-white-green"><i class="fa-brands fa-youtube p-0 font-30 me-3 "></i></a>
+                    <a href="#" class="hover-white-green"><i class="fa-solid fa-cloud p-0 font-30 me-3 "></i></a>
+                </div>
+                <h5 class="m-0 monst-bold text-white let-2-space text-uppercase font-14">SUBSCRIBE</h5>
+                <h5 class="m-0 monst-med text-brown-dark let-2-space my-3 font-14">GET HAPPY IN YOUR INBOX</h5>
+
+                <div class="d-flex flex-column flex-xl-row">
+                    <input class="input-box-white monst-med font-14 ps-3" placeholder="Your email address">
+                    </input>
+                    <a class="btn-signup-black monst-bold ms-xl-3 mt-2 mt-xl-0 center a-remove" href="#">
+                        sign up
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="center-h bg-black px-lg-5  px-3 py-3" id="">
+            <div class="d-flex justify-content-lg-between flex-column flex-lg-row ">
+                <div>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">© Copyright We Are Happy
+                        Media 2022</a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">Privacy Policy
+                    </a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">Terms</a>
+                </div>
+                <div>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">Facebook</a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">YouTube
+                    </a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">Instagram</a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">TikTok</a>
+                    <a href="#" class="font-14 monst-med copy-right-link m-0 me-3 a-remove">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap 5  script -->
+    <script src="./js/bootstrap_5.js"></script>
+    <script src="./js/popper.js"></script>
+    <!-- js file -->
+    <script src="./js/carousel-scroll.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- animation -->
+    <script src="./js/waypoint.js"></script>
+</body>
+
+</html>
