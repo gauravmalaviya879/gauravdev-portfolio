@@ -149,7 +149,84 @@ footer {
 }
 
 
-/* Responsive Design */
+
+.rafa-template {
+  margin-top: 40px;
+}
+
+.rafa-container {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.rafa-content {
+  flex: 1;
+  min-width: 250px;
+}
+
+.rafa-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.rafa-content p {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+
+/* Buttons */
+.rafa-content .buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rafa-content .buttons button,
+.rafa-content .buttons a {
+  background-color: #007bff;
+  color: #fff;
+  padding: 7px 16px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.rafa-content .buttons a:hover,
+.rafa-content .buttons button:hover {
+  background-color: #0056b3;
+}
+.rafa-image {
+
+  width: 350px;
+  max-height: 220px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rafa-image img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: top;
+
+
+}
+/* Responsive */
+
 @media (max-width: 768px) {
   header {
     padding: 20px 10px;
@@ -168,4 +245,11 @@ footer {
   main {
     padding: 10px;
   }
+   .rafa-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+ 
 }
