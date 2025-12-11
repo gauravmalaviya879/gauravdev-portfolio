@@ -24,21 +24,26 @@ header {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-nav {
+.sticky-header {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background: #333;
+  
 }
-
-nav a {
+.list-title{
+  padding-top: 40px;
+}
+.sticky-header a {
   color: white;
   padding: 15px 20px;
   text-decoration: none;
   display: block;
 }
 
-nav a:hover {
+.sticky-header a:hover {
   background: #555;
 }
 
@@ -224,6 +229,19 @@ footer {
   object-position: top;
 
 
+}
+
+.link-ref{
+  text-decoration: none;
+  color : black;
+  
+}
+.title-ref{
+  transition-duration: 0.5s;
+}
+.title-ref:hover{
+  color : #007bff;
+  text-decoration: underline;
 }
 /* Responsive */
 
