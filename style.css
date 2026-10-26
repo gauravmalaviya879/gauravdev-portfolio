@@ -268,6 +268,79 @@ footer {
 }
 
 
+/* Certificates Section */
+
+.certificates-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cert-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cert-tab {
+    padding: 12px 24px;
+    background: #e9ecef;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.cert-tab:hover {
+    background: #d4d8dd;
+}
+
+.cert-tab.active {
+    background: #007acc;
+    color: white;
+}
+
+.cert-content {
+    position: relative;
+    min-height: 400px;
+}
+
+.cert-panel {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.cert-panel.active {
+    display: block;
+}
+
+.cert-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
@@ -293,5 +366,15 @@ footer {
     .portfolio-image {
         max-width: 350px;
         max-height: 220px;
+    }
+    .cert-tabs {
+        flex-direction: column;
+    }
+    .cert-tab {
+        width: 100%;
+        text-align: center;
+    }
+    .cert-content {
+        min-height: 300px;
     }
 }
